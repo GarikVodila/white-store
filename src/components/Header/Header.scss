@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inst {
+    width: 35px;
+    height: 35px;
+    opacity: 0.9;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+.header {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #212121;
+
+    &__menu {
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+    &__container {
+        width: 80%;
+        margin: 0 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 95px;
+        height: 95px;
+        background-color: #CAD3C8;
+        border-radius: 100%;
+        box-sizing: border-box;
+        user-select: none;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            width: 105px;
+            height: 105px;
+        }
+
+        @media (max-width:450px) {
+            width: 65px;
+            height: 65px;
+            margin-right: 10px;
+        }
+    }
+
+    &__navBar {
+        width: 100%;
+        padding-top: 20px;
+        height: 65px;
+        display: flex;
+        border-bottom: 2px solid #CAD3C8;
+
+        @media (max-width:450px) {
+            margin-left: 7px;
+            height: 50px;
+        }
+    
+    
+        &-btn {
+            width: 40px;
+            height: 40px;
+            box-sizing: border-box;
+            margin: 0 3px;
+
+            @media (max-width:680px) {
+                width: 26px;
+                height: 26px;
+                margin: 0;
+            }
+
+            @media (max-width:450px) {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    
+        &-icon {
+            width: 35px;
+            height: 35px;
+            opacity: 0.9;
+            transition: 1s;
+
+            &:hover {
+                width: 40px;
+                height: 40px;
+            }
+
+            @media (max-width:680px) {
+                width: 26px;
+                height: 26px;
+            }
+
+            @media (max-width:450px) {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+
+    &__menu__lang {
+        width: 100%;
+        padding-top: 2px;
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width:450px) {
+            margin-left: 10px;
+        }
+
+        &-item {
+            font-size: 20px;
+            font-weight: 700;
+            color: #CAD3C8;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: 0.5s;
+
+            @media (max-width:450px) {
+                font-size: 16px;
+            }
+
+            &:hover {
+                font-size: 22px;
+
+                .header__menu__lang-icon {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        }
+
+        &-icon {
+            margin-left: 4px;
+            width: 15px;
+            height: 15px;
+            transition: 0.5s;
+        }
+    }
+}

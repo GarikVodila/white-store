@@ -1,0 +1,59 @@
+.footer {
+    width: 100%;
+    background-color: #212121;
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    &__infoBox {
+        width: 100%;
+        display: flex;
+        padding-top: 10px;
+
+        &__item {
+            width: 25%;
+            margin-left: 15px;
+
+            @media (max-width:450px) {
+                width: 32%;
+                margin-left: 7px;
+            }
+        }
+
+        &-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #CAD3C8;
+            margin-bottom: 5px;
+
+            @media (max-width:450px) {
+                font-size: 20px;
+            }
+        }
+
+        &-text {
+            font-size: 20px;
+            font-weight: 300;
+            color: #CAD3C8;
+            line-height: 1.3;
+
+            @media (max-width:450px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__inc {
+        margin-top: 15px;
+        font-size: 24px;
+        color: #CAD3C8;
+        text-align: center;
+
+        @media (max-width:450px) {
+            font-size: 18px;
+        }
+    }
+}

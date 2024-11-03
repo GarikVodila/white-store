@@ -1,0 +1,63 @@
+@keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+
+    33% {
+        margin-left: -33%;
+    }
+
+    66% {   
+        margin-left: -66%;
+    }
+}
+
+
+.carusel {
+
+    &__container {
+        width: 50%;
+        height: 90px;
+        top: 15px;
+        left: 450px;
+        background-color: antiquewhite;
+        box-sizing: border-box;
+        overflow: hidden;
+        user-select: none;
+
+        @media (max-width:450px) {
+            height: 65px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        width: 300%;
+        
+    }
+
+    &__item {
+        width: 33.33333%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 25px;
+        
+    }
+}
+
+.add-1 {
+    background-color: cornflowerblue;
+    animation: slide 20s infinite;
+}
+
+.add-2 {
+    background-color: chocolate;
+}
+
+.add-3 {
+    background-color: chartreuse;
+}
