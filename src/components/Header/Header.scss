@@ -20,11 +20,6 @@
     padding: 15px 0;
     background-color: #212121;
 
-    &__menu {
-        width: 20%;
-        box-sizing: border-box;
-    }
-
     &__container {
         width: 80%;
         margin: 0 10%;
@@ -40,6 +35,7 @@
         box-sizing: border-box;
         user-select: none;
         transition: 0.5s ease-in-out;
+        margin-right: 10px;
 
         &:hover {
             width: 105px;
@@ -58,6 +54,7 @@
         padding-top: 20px;
         height: 65px;
         display: flex;
+        justify-content: space-around;
         border-bottom: 2px solid #CAD3C8;
 
         @media (max-width:450px) {
@@ -105,6 +102,11 @@
                 height: 23px;
             }
         }
+    }
+
+    &__menu {
+        width: 20%;
+        margin-left: 10px;
     }
 
     &__menu__lang {
