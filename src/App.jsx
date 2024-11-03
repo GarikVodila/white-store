@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route index element={<HomePage/>}/>
+        <Route index path='white-store' element={<HomePage/>}/>
         <Route path='*' element={<NotPage/>}/>
       </Routes>
     </>
