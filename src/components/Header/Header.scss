@@ -95,11 +95,21 @@
             @media (max-width:680px) {
                 width: 26px;
                 height: 26px;
+
+                &:hover {
+                    width: 26px;
+                    height: 26px;
+                }
             }
 
             @media (max-width:450px) {
                 width: 23px;
                 height: 23px;
+
+                &:hover {
+                    width: 23px;
+                    height: 23px;
+                }
             }
         }
     }
