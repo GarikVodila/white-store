@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
-import  Carusel  from '../Carusel/Carusel'
+import  Carusel  from '../../Carusel/Carusel'
 
-import Logo from './icons/logotipe.svg?react';
-import Inst from './icons/insta.svg?react'
-import Tg from './icons/tg.svg?react'
-import Tt from './icons/tt.svg?react'
-import Bul from './icons/bul.svg?react'
-import Uk from './icons/uk.svg?react'
+import Logo from '../icons/logotipe.svg?react';
+import Inst from '../icons/insta.svg?react'
+import Tg from '../icons/tg.svg?react'
+import Tt from '../icons/tt.svg?react'
+import Bul from '../icons/bul.svg?react'
+import Ukr from '../icons/ukr.svg?react'
 
-import './Header.scss'
+import '../Header.scss'
 
-function Header() {
+function HeaderUk() {
     return(
         <>
             <header className="header">
@@ -30,8 +30,8 @@ function Header() {
                             <a href="/" target="_blank" className="header__navBar-btn"><Tt className="header__navBar-icon"></Tt></a>
                         </div>
                         <div className="header__menu__lang">
-                            <a href="white-storebg" className="header__menu__lang-item">BUL <Bul className="header__menu__lang-icon"></Bul></a>
-                            <a href="white-storeUk" className="header__menu__lang-item">ENG <Uk className="header__menu__lang-icon"></Uk></a>
+                            <a href="white-store" className="header__menu__lang-item">UKR <Ukr className="header__menu__lang-icon"></Ukr></a>
+                            <a href="white-storeBg" className="header__menu__lang-item">BUL <Bul className="header__menu__lang-icon"></Bul></a>
                         </div>
                     </div>
                 </div>
@@ -42,4 +42,4 @@ function Header() {
 }
 
 
-export default Header;
+export default HeaderUk;

@@ -6,9 +6,12 @@
         height: 350px;
         border-radius: 3px;
         background-color: #212121;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
 
         @media (max-width:700px) {
-            width: 17%;
+            width: 30%;
             padding: 7px 7px;
         }
     }  

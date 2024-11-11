@@ -1,13 +1,13 @@
 import React from "react";
 
-import './Filter.scss'
+import '../Filter.scss'
 
-function Filter() {
+function FilterUk() {
     return(
         <>
             <aside className="filter__container">
                 <div className="brend__container">
-                    <div className="brend__title">Бренды</div>
+                    <div className="brend__title">Brands</div>
                     <div className="brend__column">
                         <a href="/sti" className="brend__column-item">Stone Island®</a>
                         <a href="/nk" className="brend__column-item">Nike®</a>
@@ -20,4 +20,4 @@ function Filter() {
     )
 }
 
-export default Filter;
+export default FilterUk;

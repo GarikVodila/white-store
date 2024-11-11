@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import {Route, Routes} from "react-router-dom"
 
 import HomePage from './components/Pages/HomePage/HomePage.jsx'
+import Bg from './components/Pages/Bg/Bg.jsx'
+import Uk from './components/Pages/Uk/Uk.jsx'
 import NotPage from './components/Pages/NotPage/NotPage.jsx'
 
 
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route index path='white-store' element={<HomePage/>}/>
         <Route path='*' element={<NotPage/>}/>
+        <Route path='white-storeBg' element={<Bg/>}/>
+        <Route path='white-storeuk' element={<Uk/>}/>
       </Routes>
     </>
   );
