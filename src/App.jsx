@@ -16,8 +16,8 @@ function App() {
       <Routes>
         <Route index path='white-store' element={<HomePage/>}/>
         <Route path='*' element={<NotPage/>}/>
-        <Route path='white-storeBg' element={<Bg/>}/>
-        <Route path='white-storeuk' element={<Uk/>}/>
+        <Route path='white-store/white-storeBg' element={<Bg/>}/>
+        <Route path='white-store/white-storeuk' element={<Uk/>}/>
       </Routes>
     </>
   );
