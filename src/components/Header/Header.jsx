@@ -31,7 +31,7 @@ function Header() {
                             <a href="/" target="_blank" className="header__navBar-btn"><Tt className="header__navBar-icon"></Tt></a>
                         </div>
                         <div className="header__menu__lang">
-                            <Link to="white-storebg" className="header__menu__lang-item">BUL <Bul className="header__menu__lang-icon"></Bul></Link>
+                            <a href="white-storebg" className="header__menu__lang-item">BUL <Bul className="header__menu__lang-icon"></Bul></a>
                             <Link to="white-storeuk" className="header__menu__lang-item">ENG <Uk className="header__menu__lang-icon"></Uk></Link>
                         </div>
                     </div>
