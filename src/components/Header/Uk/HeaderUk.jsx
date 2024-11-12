@@ -31,7 +31,7 @@ function HeaderUk() {
                         </div>
                         <div className="header__menu__lang">
                             <a href="white-store" className="header__menu__lang-item">UKR <Ukr className="header__menu__lang-icon"></Ukr></a>
-                            <a href="white-storeBg" className="header__menu__lang-item">BUL <Bul className="header__menu__lang-icon"></Bul></a>
+                            <a href="white-storebg" className="header__menu__lang-item">BUL <Bul className="header__menu__lang-icon"></Bul></a>
                         </div>
                     </div>
                 </div>
