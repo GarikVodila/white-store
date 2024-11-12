@@ -6,6 +6,5 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig({
  // …
  base: "/white-store",
- permalink: "/white-storeUk",
  plugins: [ react(), svgr()],
 });
