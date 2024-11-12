@@ -29,10 +29,6 @@ function HeaderUk() {
                             <a href="https://t.me/Whitestore2024" target="_blank" className="header__navBar-btn"><Tg className="header__navBar-icon"></Tg></a>
                             <a href="/" target="_blank" className="header__navBar-btn"><Tt className="header__navBar-icon"></Tt></a>
                         </div>
-                        <div className="header__menu__lang">
-                            <a href="white-store" className="header__menu__lang-item">UKR <Ukr className="header__menu__lang-icon"></Ukr></a>
-                            <Link to="white-storebg" className="header__menu__lang-item">BUL <Bul className="header__menu__lang-icon"></Bul></Link>
-                        </div>
                     </div>
                 </div>
 

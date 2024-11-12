@@ -30,10 +30,6 @@ function HeaderBg() {
                             <a href="https://t.me/Whitestore2024" target="_blank" className="header__navBar-btn"><Tg className="header__navBar-icon"></Tg></a>
                             <a href="/" target="_blank" className="header__navBar-btn"><Tt className="header__navBar-icon"></Tt></a>
                         </div>
-                        <div className="header__menu__lang">
-                            <a href="white-store" className="header__menu__lang-item">UKR <Ukr className="header__menu__lang-icon"></Ukr></a>
-                            <a href="white-storeuk" className="header__menu__lang-item">ENG <Uk className="header__menu__lang-icon"></Uk></a>
-                        </div>
                     </div>
                 </div>
 
