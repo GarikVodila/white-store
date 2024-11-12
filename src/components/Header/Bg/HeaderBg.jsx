@@ -31,8 +31,8 @@ function HeaderBg() {
                             <a href="/" target="_blank" className="header__navBar-btn"><Tt className="header__navBar-icon"></Tt></a>
                         </div>
                         <div className="header__menu__lang">
-                            <a href="white-store" className="header__menu__lang-item">UKR <Ukr className="header__menu__lang-icon"></Ukr></a>
-                            <a href="white-storeuk" className="header__menu__lang-item">ENG <Uk className="header__menu__lang-icon"></Uk></a>
+                            <Link to="white-store" className="header__menu__lang-item">UKR <Ukr className="header__menu__lang-icon"></Ukr></Link>
+                            <Link to="white-storeuk" className="header__menu__lang-item">ENG <Uk className="header__menu__lang-icon"></Uk></Link>
                         </div>
                     </div>
                 </div>
