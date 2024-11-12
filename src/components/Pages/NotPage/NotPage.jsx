@@ -19,7 +19,7 @@ const NotPage = () => {
 
             <div className="notPage__container">
                 <div className="notPage__infoBox">
-                    <h2 className="notPage__info">Такой страницы нет.</h2>
+                    <h2 className="notPage__info">Press again|Нажмите еще раз|Натиснете отново</h2>
                     <a onClick={goBack} className="notPage__btn">Вернуться на главную</a>
                 </div>
             </div>

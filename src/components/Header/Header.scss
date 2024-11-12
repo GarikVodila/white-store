@@ -37,11 +37,6 @@
         transition: 0.5s ease-in-out;
         margin-right: 10px;
 
-        &:hover {
-            width: 105px;
-            height: 105px;
-        }
-
         @media (max-width:450px) {
             width: 65px;
             height: 65px;
@@ -86,11 +81,6 @@
             height: 35px;
             opacity: 0.9;
             transition: 1s;
-
-            &:hover {
-                width: 40px;
-                height: 40px;
-            }
 
             @media (max-width:680px) {
                 width: 26px;
