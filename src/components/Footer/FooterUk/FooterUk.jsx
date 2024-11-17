@@ -20,7 +20,7 @@ function FooterUk () {
 
                         <div className="footer__infoBox__item">
                             <h2 className="footer__infoBox-title">About Us</h2>
-                            <p className="footer__infoBox-text">Your online store, where you can buy original items at American prices, with free shipping, and the goods arrive at your place in the shortest possible time. The service is made for customers with maximum convenience and quality, our managers will be happy to answer your questions.</p>
+                            <p className="footer__infoBox-text">Your online store, where you can buy original items at American prices, with free shipping, and the goods arrive at your place in the shortest possible time. The service is made for customers with maximum convenience and quality.</p>
                         </div>
                     </div>
 
