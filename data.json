@@ -13,5 +13,29 @@
         "art": 2605,
         "color": "black|cream",
         "size" : "m-xl"
+    },
+
+    {
+        "title": "Bape Camo Shark",
+        "price": 250,
+        "art": 8736,
+        "color": "red|blue|white|balck|+8",
+        "size" : "m-xl"
+    },
+
+    {
+        "title": "Nike Tech Fleece",
+        "price": 300,
+        "art": 1327,
+        "color": "black|cream|white|grey|+5",
+        "size" : "m-xl"
+    },
+
+    {
+        "title": "LOUIS VUITTON sweater",
+        "price": 500,
+        "art": 1874,
+        "color": "black|cream",
+        "size" : "m-xl"
     }
 ]
