@@ -1,8 +1,17 @@
 [
     {
-        "title": "Adidas Yeezy Boost 500",
-        "price": 2340,
-        "article": 911,
-        "color": "enflame"
+        "title": "Moncler Gourette Down Jacket",
+        "price": 600,
+        "art": 1457,
+        "color": "black|white",
+        "size" : "s-xxl"
+    },
+
+    {
+        "title": "Arcteryx Jacket",
+        "price": 400,
+        "art": 2605,
+        "color": "black|cream",
+        "size" : "m-xl"
     }
 ]
