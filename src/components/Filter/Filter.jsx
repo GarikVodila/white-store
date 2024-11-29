@@ -11,8 +11,8 @@ function Filter() {
                     <div className="brend__column">
                         <a href="/sti" className="brend__column-item">Stone Island®</a>
                         <a href="/nk" className="brend__column-item">Nike®</a>
-                        <a href="" className="brend__column-item">Adidas®</a>
-                        <a href="" className="brend__column-item">Puma®</a>
+                        <a href="" className="brend__column-item">Moncler®</a>
+                        <a href="" className="brend__column-item">Louis Vuitton®</a>
                     </div>
                 </div>
             </aside>
