@@ -4,7 +4,8 @@
         "price": 600,
         "art": 1457,
         "color": "black|white",
-        "size" : "s-xxl"
+        "size" : "s-xxl",
+        "type" : "jacket"
     },
 
     {
@@ -12,7 +13,8 @@
         "price": 400,
         "art": 2605,
         "color": "black|cream",
-        "size" : "m-xl"
+        "size" : "m-xl",
+        "type" : "jacket"
     },
 
     {
@@ -20,7 +22,8 @@
         "price": 250,
         "art": 8736,
         "color": "red|blue|white|balck|+8",
-        "size" : "m-xl"
+        "size" : "m-xl",
+        "type" : "hoodie"
     },
 
     {
@@ -28,14 +31,34 @@
         "price": 300,
         "art": 1327,
         "color": "black|cream|white|grey|+5",
-        "size" : "m-xl"
+        "size" : "m-xl",
+        "type" : "suite"
     },
 
     {
-        "title": "LOUIS VUITTON sweater",
+        "title": "LOUIS VUITTON Sweater",
         "price": 500,
         "art": 1874,
         "color": "black|cream",
-        "size" : "m-xl"
+        "size" : "m-xl",
+        "type" : "sweater"
+    },
+
+    {
+        "title": "Stone Islang Vest",
+        "price": 32,
+        "art": 8401,
+        "color": "black|beige",
+        "size" : "m-xl",
+        "type" : "jacket"
+    },
+
+    {
+        "title": "Stone Islang Jacket",
+        "price": 36,
+        "art": 8402,
+        "color": "black|haki|blur",
+        "size" : "m-xxl",
+        "type" : "jacket"
     }
 ]

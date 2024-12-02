@@ -3,13 +3,13 @@
         margin-left: 0px;
     }
 
-    33% {
-        margin-left: -33%;
-    }
+    // 33% {
+    //     margin-left: -33%;
+    // }
 
-    66% {   
-        margin-left: -66%;
-    }
+    // 66% {   
+    //     margin-left: -66%;
+    // }
 }
 
 
@@ -60,11 +60,59 @@
 .add-1 {
     background-color: cornflowerblue;
     animation: slide 20s infinite;
+    background-image: url(https://i.pinimg.com/736x/94/df/fa/94dffad27ee91c3854a8d852c498d681.jpg);
 
-    @media (max-width:450px) {
-        background-image: url(../../../public/img/sale-baner-litle.png);
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #CAD3C8;
+        letter-spacing: 4px;
+
+        @media (max-width:450px) {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
     }
-}
+
+    &__row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__text {
+        font-size: 30px;
+        font-weight: 700;
+        color: #CAD3C8;
+        letter-spacing: 4px;
+
+        @media (max-width:450px) {
+            font-size: 18px;
+        }
+    }
+
+    &__sale {
+        font-size: 25px;
+        font-weight: 700;
+        color: #c0392b;
+        letter-spacing: 4px;
+
+        @media (max-width:450px) {
+            font-size: 15px;
+        }
+    }
+
+    &__date {
+        font-size: 22px;
+        font-weight: 700;
+        color: #CAD3C8;
+        letter-spacing: 4px;
+
+        @media (max-width:450px) {
+            margin-top: 4px;
+            font-size: 14px;
+        }
+    }
+} 
 
 .add-2 {
     background-color: chocolate;
