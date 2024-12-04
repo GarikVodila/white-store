@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import './Catalog.scss'
+import '../Catalog.scss'
 
 // Пример данных
 const products = [
@@ -11,7 +11,7 @@ const products = [
   { id: 5, name: "LOUIS VUITTON Sweater", "art": 1874, "color": "black|cream", "size" : "m-xl", category: "sweater", price: 500 },
 ];
 
-const Catalog = () => {
+const CatalogBg = () => {
   const [category, setCategory] = useState("all");
   const [priceRange, setPriceRange] = useState(1000);
 
@@ -25,18 +25,18 @@ const Catalog = () => {
     <div className="catalog-row">
 
       <div className="filter__container">
-        <p className="brend__title">Бренды</p>
+        <p className="brend__title">Марки</p>
         <div className="brend__type-row">
-            <label className="brend__type-name" htmlFor="category">Вид одежды:</label>
+            <label className="brend__type-name" htmlFor="category">Тип облекло:</label>
             <select className="brend__type-system"
             id="category"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
             >
-                <option className="brend__type-item" value="all">Все</option>
-                <option className="brend__type-item" value="jacket">Куртки</option>
-                <option className="brend__type-item" value="hoodie">Худи</option>
-                <option className="brend__type-item" value="sweater">Свитер</option>
+                <option className="brend__type-item" value="all">Всички</option>
+                <option className="brend__type-item" value="jacket">Яке</option>
+                <option className="brend__type-item" value="hoodie">Kачулка</option>
+                <option className="brend__type-item" value="sweater">Пуловер</option>
             </select>
         </div>
 
@@ -80,4 +80,4 @@ const Catalog = () => {
   );
 };
 
-export default Catalog;
+export default CatalogBg;

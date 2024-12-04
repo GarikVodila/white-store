@@ -1,3 +1,12 @@
+.catalog-row {
+    display: flex;
+    padding: 30px;
+
+    @media (max-width:750px) {
+        padding: 20px 10px;
+    }
+}
+
 .catalog__system {
     width: 100%;
     margin-left: 80px;
@@ -96,6 +105,113 @@
             font-size: 20px;
             font-weight: 600;
             color: #2ecc71;
+        }
+    }
+
+    &__no {
+        font-size: 56px;
+        font-weight: 600;
+        margin: 50px auto;
+        color: #212121;
+    }
+}
+
+.filter {
+
+    &__container {
+        padding: 10px 15px;
+        width: 15%;
+        height: 350px;
+        border-radius: 3px;
+        background-color: #212121;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+
+        @media (max-width:700px) {
+            width: 30%;
+            padding: 7px 7px;
+        }
+    }  
+}
+
+.brend {
+
+    &__container {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #CAD3C8;
+        margin-bottom: 10px;
+
+        @media (max-width:700px) {
+            font-size: 26px;
+        }
+    }
+
+    &__type{
+
+        &-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width:800px) {
+                flex-direction: column;
+            }
+        }
+        &-name {
+            font-size: 20px;
+            font-weight: 400;
+            color: #CAD3C8;
+
+            @media (max-width:800px) {
+                font-size: 14px;
+            }
+        }  
+
+        &-system {
+            width: 40%;
+            padding-left: 3px;
+            border-radius: 3px;
+            border: 1px solid #CAD3C8;
+            background-color: #212121;
+            color: #CAD3C8;
+            font-size: 18px;
+            transition: 0.5s;
+
+            @media (max-width:800px) {
+                width: 100%;
+                margin-top: 5px;
+                font-size: 14px;
+            }
+        }
+
+        &-item {
+            font-size: 20px;
+        }
+    }
+
+    &__price {
+        width: 100%;
+        margin-top: 10px;
+
+        &-title {
+            font-size: 20px;
+            font-weight: 400;
+            color: #CAD3C8;
+            text-align: center;
+
+            @media (max-width:800px) {
+                font-size: 14px;
+            }
+        }
+
+        &-input {
+            width: 100%;
         }
     }
 }

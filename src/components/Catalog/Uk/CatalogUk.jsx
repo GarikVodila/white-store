@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import './Catalog.scss'
+import '../Catalog.scss'
 
 // Пример данных
 const products = [
@@ -11,7 +11,7 @@ const products = [
   { id: 5, name: "LOUIS VUITTON Sweater", "art": 1874, "color": "black|cream", "size" : "m-xl", category: "sweater", price: 500 },
 ];
 
-const Catalog = () => {
+const CatalogUk = () => {
   const [category, setCategory] = useState("all");
   const [priceRange, setPriceRange] = useState(1000);
 
@@ -27,21 +27,21 @@ const Catalog = () => {
       <div className="filter__container">
         <p className="brend__title">Бренды</p>
         <div className="brend__type-row">
-            <label className="brend__type-name" htmlFor="category">Вид одежды:</label>
+            <label className="brend__type-name" htmlFor="category">Brands</label>
             <select className="brend__type-system"
             id="category"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
             >
-                <option className="brend__type-item" value="all">Все</option>
-                <option className="brend__type-item" value="jacket">Куртки</option>
-                <option className="brend__type-item" value="hoodie">Худи</option>
-                <option className="brend__type-item" value="sweater">Свитер</option>
+                <option className="brend__type-item" value="all">All</option>
+                <option className="brend__type-item" value="jacket">Jacket</option>
+                <option className="brend__type-item" value="hoodie">Hoodie</option>
+                <option className="brend__type-item" value="sweater">Sweater</option>
             </select>
         </div>
 
         <div className="brend__price">
-            <p className="brend__price-title" htmlFor="price">Цена: {priceRange}Lv</p>
+            <p className="brend__price-title" htmlFor="price">Price: {priceRange}Lv</p>
             <input
             className="brend__price-input"
             id="price"
@@ -80,4 +80,4 @@ const Catalog = () => {
   );
 };
 
-export default Catalog;
+export default CatalogUk;
