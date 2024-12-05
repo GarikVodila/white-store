@@ -4,7 +4,7 @@ import './Catalog.scss'
 
 // Пример данных
 const products = [
-  { id: 1, name: "Moncler Gourette Down Jacket", "art": 1457, category: "jacket", price: 600, "size" : "s-xxl","color": "black|white" },
+  { id: 1, name: "Moncler Enfant New Maya Down Jacket", img: "../img/moncler-jacket.png","art": 1457, category: "jacket", price: 600, "size" : "s-xxl","color": "black|white" },
   { id: 2, name: "Arcteryx Jacket", category: "jacket", price: 400, "size" : "m-xl", "color": "black|cream","art": 2605 },
   { id: 3, name: "Bape Camo Shark", "art": 8736,  "color": "red|blue|white|balck|+8", "size" : "m-xl", category: "hoodie", price: 250 },
   { id: 4, name: "Stone Islang Vest", "art": 8401, "color": "black|beige", "size" : "m-xl", category: "jacket", price: 32},
@@ -62,7 +62,7 @@ const Catalog = () => {
           filteredProducts.map((product) => (
             <div className="catalog__item" key={product.id}>
                 <p className="catalog__item-art">art:{product.art}</p>
-                <img className="catalog__item-img" src="" alt="#" />
+                <img className="catalog__item-img" src={product.img} alt="#" />
                 <h3 className="catalog__item-title">{product.name}</h3>
                 <div className="catalog__item-row">
                     <p className="catalog__item-size">{product.size}</p>
