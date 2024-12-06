@@ -225,7 +225,7 @@ const products = [
   },
 
   { id: 21, 
-    name: "Stone Islang Vest",
+    name: "Stone Island Vest",
     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FG4aI2t2HeNEKzHzArdH4%2Fasset.png?alt=media&token=36e82382-464e-48fe-a306-16310c9ef052",
     "art": 8401,
     "color": "black|white", 
@@ -236,7 +236,7 @@ const products = [
   },
 
   { id: 22, 
-    name: "Stone Islang Jacket",
+    name: "Stone Island Jacket",
     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FX3krxcNjeHOuT4Mt4q0p%2Fasset.png?alt=media&token=1ab9a823-7366-4c4f-aecc-0073e9b82e1b",
     "art": 8402,
     "color": "black", 
