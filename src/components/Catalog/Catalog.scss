@@ -28,9 +28,7 @@
 
     &__item {
         width: 20%;
-        // height: 380px;
-        min-height: 350px;
-        max-height: 380px;
+        height: 350px;
         background-color: #212121;
         border-radius: 3px;
         padding: 10px 7px;
@@ -46,7 +44,12 @@
 
         @media (max-width:750px) {
             width: 45%; 
-            height: 300px;
+            height: 200px;
+        }
+
+        @media (max-width:750px) {
+            // width: 45%; 
+            height: 250px;
         }
 
         &-art {
@@ -68,8 +71,8 @@
         }
 
         &-img {
-            // width: 70%;
-            height: 180px;
+            width: 70%;
+            // height: 180px;
             border-radius: 5px;
             display: block;
             margin: 0 auto;
