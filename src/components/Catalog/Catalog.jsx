@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-
-import img from './img/moncler-jacket.png'
-
 import './Catalog.scss'
 
 // Пример данных
@@ -12,8 +9,9 @@ const products = [
     art: 1457, 
     category: "jacket", 
     price: 799, 
-    "size" : "s-xxl",
-    "color": "black" 
+    size : "s-xxl",
+    color: "black",
+    brand: "moncler"
   },
 
   { id: 2, 
@@ -22,8 +20,9 @@ const products = [
     art: 1458, 
     category: "jacket",
     price: 799,
-    "size" : "s-xxl", 
-    "color": "white"
+    size : "s-xxl", 
+    color: "white",
+    brand: "moncler"
   },
 
   { id: 3, 
@@ -33,7 +32,8 @@ const products = [
     color: "pink", 
     size: "m-xl", 
     category: "hoodie", 
-    price: 450 
+    price: 450 ,
+    brand: "bape"
   },
 
   { id: 4, 
@@ -43,7 +43,8 @@ const products = [
     "color": "red", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 450 
+    price: 450 ,
+    brand: "bape"
   },
 
   { id: 5, 
@@ -53,7 +54,8 @@ const products = [
     "color": "grey", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 450 
+    price: 450  ,
+    brand: "bape"
   },
 
   { id: 6, 
@@ -63,7 +65,8 @@ const products = [
     "color": "blue", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 450 
+    price: 450  ,
+    brand: "bape"
   },
 
   { id: 7, 
@@ -73,7 +76,8 @@ const products = [
     "color": "purple", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 450 
+    price: 450  ,
+    brand: "bape"
   },
 
   { id: 8, 
@@ -83,7 +87,8 @@ const products = [
     "color": "grey", 
     "size" : "m-xl", 
     category: "sport-suit", 
-    price: 300 
+    price: 300  ,
+    brand: "nike"
   },
 
   { id: 9, 
@@ -93,7 +98,8 @@ const products = [
     "color": "white", 
     "size" : "m-xl", 
     category: "sport-suit", 
-    price: 300 
+    price: 300 ,
+    brand: "nike"
   },
 
   { id: 10, 
@@ -103,7 +109,8 @@ const products = [
     "color": "black", 
     "size" : "m-xl", 
     category: "sport-suit", 
-    price: 300 
+    price: 300 ,
+    brand: "nike"
   },
 
   { id: 11, 
@@ -113,7 +120,8 @@ const products = [
     "color": "red", 
     "size" : "m-xl", 
     category: "sport-suit", 
-    price: 300 
+    price: 300 ,
+    brand: "nike"
   },
 
   { id: 12, 
@@ -123,7 +131,8 @@ const products = [
     "color": "black", 
     "size" : "m-xl", 
     category: "sweater", 
-    price: 600 
+    price: 600 ,
+    brand: "lv"
   },
 
   { id: 13, 
@@ -133,7 +142,8 @@ const products = [
     "color": "black", 
     "size" : "xs-l", 
     category: "Tshirt", 
-    price: 200 
+    price: 200 ,
+    brand: "balenciaga"
   },
 
   { id: 14, 
@@ -143,7 +153,8 @@ const products = [
     "color": "white", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 180 
+    price: 180 ,
+    brand: "stussy"
   },
 
   { id: 15, 
@@ -153,7 +164,8 @@ const products = [
     "color": "white", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 180 
+    price: 180 ,
+    brand: "stussy"
   },
 
   { id: 16, 
@@ -163,7 +175,8 @@ const products = [
     "color": "white", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 140 
+    price: 140 ,
+    brand: "stussy"
   },
 
   { id: 17, 
@@ -173,7 +186,8 @@ const products = [
     "color": "black", 
     "size" : "xs-l", 
     category: "jacket", 
-    price: 280
+    price: 280,
+    brand: "stussy"
   },
 
   { id: 18, 
@@ -183,7 +197,8 @@ const products = [
     "color": "black", 
     "size" : "s-xl", 
     category: "sweater", 
-    price: 630
+    price: 630,
+    brand: "stone-island"
   },
 
   { id: 19, 
@@ -193,7 +208,8 @@ const products = [
     "color": "white", 
     "size" : "s-xl", 
     category: "sweater", 
-    price: 630
+    price: 630,
+    brand: "stone-island"
   },
 
   { id: 20, 
@@ -203,7 +219,8 @@ const products = [
     "color": "black", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 299
+    price: 299,
+    brand: "lv"
   },
 
   { id: 21, 
@@ -213,7 +230,8 @@ const products = [
     "color": "black|white", 
     "size" : "m-xl", 
     category: "jacket", 
-    price: 550
+    price: 550,
+    brand: "stone-island"
   },
 
   { id: 22, 
@@ -223,7 +241,8 @@ const products = [
     "color": "black", 
     "size" : "m-xl", 
     category: "jacket", 
-    price: 580
+    price: 580,
+    brand: "stone-island"
   },
 
   { id: 23, 
@@ -233,25 +252,28 @@ const products = [
     "color": "grey|blue", 
     "size" : "m-xl", 
     category: "jacket", 
-    price: 799
+    price: 799,
+    brand: "stone-island"
   },
 ];
 
 const Catalog = () => {
   const [category, setCategory] = useState("all");
-  const [priceRange, setPriceRange] = useState(1000);
+  const [priceRange, setPriceRange] = useState(800);
+  const [brand, setBrand] = useState("all")
 
   const filteredProducts = products.filter((product) => {
-    const matchesCategory = category === "all" || product.category === category;
+    const matchesCategory = category === "all" || product.category === category ;
     const matchesPrice = product.price <= priceRange;
-    return matchesCategory && matchesPrice;
+    const matchesBrend = brand === "all" || product.brand === brand;
+    return matchesCategory && matchesPrice && matchesBrend;
   });
 
   return (
     <div className="catalog-row">
 
       <div className="filter__container">
-        <p className="brend__title">Бренды</p>
+        <p className="brend__title">Фильтр</p>
         <div className="brend__type-row">
             <label className="brend__type-name" htmlFor="category">Вид одежды:</label>
             <select className="brend__type-system"
@@ -274,11 +296,28 @@ const Catalog = () => {
             className="brend__price-input"
             id="price"
             type="range"
-            min="10"
-            max="2000"
+            min="140"
+            max="1500"
             value={priceRange}
             onChange={(e) => setPriceRange(Number(e.target.value))}
             />
+        </div>
+
+        <div className="brend__box">
+          <p className="brend__box-title">Бренды</p>
+            <select className="brend__box-system"
+                id="brand"
+                value={brand}
+                onChange={(e) => setBrand(e.target.value)}
+                >
+                <option className="brend__box-item" value="all">Все</option>
+                <option className="brend__box-item" value="bape">Bape</option>
+                <option className="brend__box-item" value="stone-island">Stone Island</option>
+                <option className="brend__box-item" value="lv">LOUIS VUITTON</option>
+                <option className="brend__box-item" value="moncler">Moncler</option>
+                <option className="brend__box-item" value="nike">Nike</option>
+                <option className="brend__box-item" value="stussy">Stussy</option>
+            </select>
         </div>
       </div>
 

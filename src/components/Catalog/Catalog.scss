@@ -72,7 +72,6 @@
 
         &-img {
             width: 70%;
-            // height: 180px;
             border-radius: 5px;
             display: block;
             margin: 0 auto;
@@ -130,12 +129,10 @@
 }
 
 .filter {
-
     &__container {
         padding: 10px 15px;
         width: 15%;
-        min-height: 200px;
-        max-height: 210px;
+        height: 250px;
         border-radius: 3px;
         background-color: #212121;
         box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
@@ -151,6 +148,35 @@
 
 .brend {
 
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-title  {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #CAD3C8;
+            margin-bottom: 10px;
+        }
+
+        &-system {
+            border-radius: 3px;
+            border: 1px solid #CAD3C8;
+            background-color: #212121;
+            color: #CAD3C8;
+            font-size: 20px;
+            transition: 0.5s;
+        }
+
+        &-item {
+            text-align: center;
+            transition: 0.5s;
+        }
+    }
+
     &__container {
         width: 100%;
     }
@@ -159,6 +185,8 @@
         font-size: 30px;
         font-weight: 700;
         color: #CAD3C8;
+        margin-bottom: 10px;
+        text-align: center;
         margin-bottom: 10px;
 
         @media (max-width:700px) {
