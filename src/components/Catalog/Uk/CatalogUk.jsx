@@ -4,11 +4,235 @@ import '../Catalog.scss'
 
 // Пример данных
 const products = [
-  { id: 1, name: "Moncler Gourette Down Jacket", "art": 1457, category: "jacket", price: 600, "size" : "s-xxl","color": "black|white" },
-  { id: 2, name: "Arcteryx Jacket", category: "jacket", price: 400, "size" : "m-xl", "color": "black|cream","art": 2605 },
-  { id: 3, name: "Bape Camo Shark", "art": 8736,  "color": "red|blue|white|balck|+8", "size" : "m-xl", category: "hoodie", price: 250 },
-  { id: 4, name: "Stone Islang Vest", "art": 8401, "color": "black|beige", "size" : "m-xl", category: "jacket", price: 32},
-  { id: 5, name: "LOUIS VUITTON Sweater", "art": 1874, "color": "black|cream", "size" : "m-xl", category: "sweater", price: 500 },
+  { id: 1, 
+    name: "Moncler Enfant New Maya Down Jacket", 
+    img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FsnaQ2HmDAnW76nRUQ16s%2Fasset.png?alt=media&token=15437eef-e60a-44e3-a78c-83eb0089180e', 
+    art: 1457, 
+    category: "jacket", 
+    price: 799, 
+    "size" : "s-xxl",
+    "color": "black" 
+  },
+
+  { id: 2, 
+    name: "Moncler Enfant New Maya Down Jacket",
+    img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F6jFIIQwCaDN2xix3770y%2Fasset.png?alt=media&token=9ceb2586-8379-4b48-9271-fb2161d113e6', 
+    art: 1458, 
+    category: "jacket",
+    price: 799,
+    "size" : "s-xxl", 
+    "color": "white"
+  },
+
+  { id: 3, 
+    name: "Bape Camo Shark",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FXrkeE99BEPyXnnftVZZr%2Fasset.png?alt=media&token=11b753be-f91d-46b9-b96c-14e33f91a706",
+    art: 8731,
+    color: "pink", 
+    size: "m-xl", 
+    category: "hoodie", 
+    price: 450 
+  },
+
+  { id: 4, 
+    name: "Bape Camo Shark",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FhT17cITeCq8PJtQi3AuB%2Fasset.png?alt=media&token=7e44d2a2-73ca-4001-bc77-14eeef808e3f",
+    "art": 8732,
+    "color": "red", 
+    "size" : "m-xl", 
+    category: "hoodie", 
+    price: 450 
+  },
+
+  { id: 5, 
+    name: "Bape Camo Shark",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FWTImiNcYiwG4k61QYstD%2Fasset.png?alt=media&token=0ed239b9-f4e1-459d-ba1c-81f199fb150f",
+    "art": 8733,
+    "color": "grey", 
+    "size" : "m-xl", 
+    category: "hoodie", 
+    price: 450 
+  },
+
+  { id: 6, 
+    name: "Bape Camo Shark",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F3QhM5re61V2BE3rG3Ryt%2Fasset.png?alt=media&token=01463984-3e72-471f-bf5f-bb5df9ba0fdf",
+    "art": 8734,
+    "color": "blue", 
+    "size" : "m-xl", 
+    category: "hoodie", 
+    price: 450 
+  },
+
+  { id: 7, 
+    name: "Bape Camo Shark",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F8JkeB8vuZ6NUl5sjWOyH%2Fasset.png?alt=media&token=c9f41a8c-7f83-46c6-bfe8-855b8ca03c1b",
+    "art": 8736,
+    "color": "purple", 
+    "size" : "m-xl", 
+    category: "hoodie", 
+    price: 450 
+  },
+
+  { id: 8, 
+    name: "Nike Tech Fleece",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FOza0JzRvRExI3zmRc1zT%2Fasset.png?alt=media&token=c81d943f-d0c6-44e1-8c19-624cd94c1499",
+    "art": 1322,
+    "color": "grey", 
+    "size" : "m-xl", 
+    category: "sport-suit", 
+    price: 300 
+  },
+
+  { id: 9, 
+    name: "Nike Tech Fleece",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FLDyjTPqPjpt8N4mg1QBs%2Fasset.png?alt=media&token=adbeadae-8876-4f39-b02b-6c192e8b1e48",
+    "art": 1323,
+    "color": "white", 
+    "size" : "m-xl", 
+    category: "sport-suit", 
+    price: 300 
+  },
+
+  { id: 10, 
+    name: "Nike Tech Fleece",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FycIjMOQGJJqKhdNm8PMD%2Fasset.png?alt=media&token=9cb4fc3a-888b-4459-bf8a-94facf98d13b",
+    "art": 1324,
+    "color": "black", 
+    "size" : "m-xl", 
+    category: "sport-suit", 
+    price: 300 
+  },
+
+  { id: 11, 
+    name: "Nike Tech Fleece",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FwRjgdfz5DLLt4u3ndpoj%2Fasset.png?alt=media&token=72c668ae-61e1-4222-9665-30071c6ee2f4",
+    "art": 1325,
+    "color": "red", 
+    "size" : "m-xl", 
+    category: "sport-suit", 
+    price: 300 
+  },
+
+  { id: 12, 
+    name: "Sweater Lv Maison Ringo",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FZjCdoo0Iref04UAJu9fP%2Fasset.png?alt=media&token=7a7c9c34-f446-4cbe-a035-77c18f27d502",
+    "art": 1874,
+    "color": "black", 
+    "size" : "m-xl", 
+    category: "sweater", 
+    price: 600 
+  },
+
+  { id: 13, 
+    name: "T-shirt Balenciaga Sport Type",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F1WnCCLwVmz3UWyteQRLz%2Fasset.png?alt=media&token=0fff71a6-0c2e-4160-8a4f-8ab8659eaf01",
+    "art": 1952,
+    "color": "black", 
+    "size" : "xs-l", 
+    category: "Tshirt", 
+    price: 200 
+  },
+
+  { id: 14, 
+    name: "Stussy Skull T-shirt",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2Fn8zgFfL5WKH89CTz7bX6%2Fasset.png?alt=media&token=ee4497aa-2114-45ed-9853-0e41299bbdd8",
+    "art": 4502,
+    "color": "white", 
+    "size" : "s-xl", 
+    category: "Tshirt", 
+    price: 180 
+  },
+
+  { id: 15, 
+    name: "Stussy & Born X Raised 8 Ball Tee T-shirt",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F84klr5HnVAsu2Cl5OPA3%2Fasset.png?alt=media&token=ff5f65d4-4f9e-4c84-9ee8-bfa4bf7c7c47",
+    "art": 4503,
+    "color": "white", 
+    "size" : "s-xl", 
+    category: "Tshirt", 
+    price: 180 
+  },
+
+  { id: 16, 
+    name: "Stussy USA Pig T-shirt",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FvN935CA2UyyiZsfnoPiH%2Fasset.png?alt=media&token=beaeb72f-9087-4e4a-9d94-a140802b81ef",
+    "art": 4504,
+    "color": "white", 
+    "size" : "s-xl", 
+    category: "Tshirt", 
+    price: 140 
+  },
+
+  { id: 17, 
+    name: "Stussy Pufer Jacket",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FWrkvaqav22KpnVs4yxXb%2Fasset.png?alt=media&token=de76c12e-2522-4bc9-91de-cddff88694c5",
+    "art": 4525,
+    "color": "black", 
+    "size" : "xs-l", 
+    category: "jacket", 
+    price: 280
+  },
+
+  { id: 18, 
+    name: "Stone Island Longslev",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FfXZ6Kq0ruJ5q46M6Egfd%2Fasset.png?alt=media&token=38c79750-2e92-4a38-90f0-eb5fde17f154",
+    "art": 8403,
+    "color": "black", 
+    "size" : "s-xl", 
+    category: "sweater", 
+    price: 630
+  },
+
+  { id: 19, 
+    name: "Stone Island Longslev",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FKn8IQt0Lz4yYDhLU175w%2Fasset.png?alt=media&token=7cc36543-9c5a-4246-9d9a-02957620158c",
+    "art": 8404,
+    "color": "white", 
+    "size" : "s-xl", 
+    category: "sweater", 
+    price: 630
+  },
+
+  { id: 20, 
+    name: "LV Premium T-shirt",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2Fv9pP53ZKWjIurlwIMLkE%2Fasset.png?alt=media&token=07dab079-a48f-41b6-be7e-82fe6afff80a",
+    "art": 1915,
+    "color": "black", 
+    "size" : "s-xl", 
+    category: "Tshirt", 
+    price: 299
+  },
+
+  { id: 21, 
+    name: "Stone Islang Vest",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FG4aI2t2HeNEKzHzArdH4%2Fasset.png?alt=media&token=36e82382-464e-48fe-a306-16310c9ef052",
+    "art": 8401,
+    "color": "black|white", 
+    "size" : "m-xl", 
+    category: "jacket", 
+    price: 550
+  },
+
+  { id: 22, 
+    name: "Stone Islang Jacket",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FX3krxcNjeHOuT4Mt4q0p%2Fasset.png?alt=media&token=1ab9a823-7366-4c4f-aecc-0073e9b82e1b",
+    "art": 8402,
+    "color": "black", 
+    "size" : "m-xl", 
+    category: "jacket", 
+    price: 580
+  },
+
+  { id: 23, 
+    name: "Stone Island Jacket Classic Luxury ",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FBaO0qAeQCQTNF6V5k0dJ%2Fasset.png?alt=media&token=acf944be-c0ba-41b3-9582-ffbea6be4977",
+    "art": 8405,
+    "color": "grey|blue", 
+    "size" : "m-xl", 
+    category: "jacket", 
+    price: 799
+  },
 ];
 
 const CatalogUk = () => {
@@ -37,6 +261,8 @@ const CatalogUk = () => {
                 <option className="brend__type-item" value="jacket">Jacket</option>
                 <option className="brend__type-item" value="hoodie">Hoodie</option>
                 <option className="brend__type-item" value="sweater">Sweater</option>
+                <option className="brend__type-item" value="sport-suit">Sports suit</option>
+                <option className="brend__type-item" value="Tshirt">T-shirt</option>
             </select>
         </div>
 
