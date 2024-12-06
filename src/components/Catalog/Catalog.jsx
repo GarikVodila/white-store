@@ -131,20 +131,110 @@ const products = [
     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F1WnCCLwVmz3UWyteQRLz%2Fasset.png?alt=media&token=0fff71a6-0c2e-4160-8a4f-8ab8659eaf01",
     "art": 1952,
     "color": "black", 
-    "size" : "s-xl", 
+    "size" : "xs-l", 
     category: "Tshirt", 
     price: 200 
   },
 
-  // { id: 14, 
-  //   name: "Stussy Skull T-shirt",
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F1WnCCLwVmz3UWyteQRLz%2Fasset.png?alt=media&token=0fff71a6-0c2e-4160-8a4f-8ab8659eaf01",
-  //   "art": 4502,
-  //   "color": "black", 
-  //   "size" : "xs-l", 
-  //   category: "Tshirt", 
-  //   price: 180 
-  // },
+  { id: 14, 
+    name: "Stussy Skull T-shirt",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2Fn8zgFfL5WKH89CTz7bX6%2Fasset.png?alt=media&token=ee4497aa-2114-45ed-9853-0e41299bbdd8",
+    "art": 4502,
+    "color": "white", 
+    "size" : "s-xl", 
+    category: "Tshirt", 
+    price: 180 
+  },
+
+  { id: 15, 
+    name: "Stussy & Born X Raised 8 Ball Tee T-shirt",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F84klr5HnVAsu2Cl5OPA3%2Fasset.png?alt=media&token=ff5f65d4-4f9e-4c84-9ee8-bfa4bf7c7c47",
+    "art": 4503,
+    "color": "white", 
+    "size" : "s-xl", 
+    category: "Tshirt", 
+    price: 180 
+  },
+
+  { id: 16, 
+    name: "Stussy USA Pig T-shirt",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FvN935CA2UyyiZsfnoPiH%2Fasset.png?alt=media&token=beaeb72f-9087-4e4a-9d94-a140802b81ef",
+    "art": 4504,
+    "color": "white", 
+    "size" : "s-xl", 
+    category: "Tshirt", 
+    price: 140 
+  },
+
+  { id: 17, 
+    name: "Stussy Pufer Jacket",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FWrkvaqav22KpnVs4yxXb%2Fasset.png?alt=media&token=de76c12e-2522-4bc9-91de-cddff88694c5",
+    "art": 4525,
+    "color": "black", 
+    "size" : "xs-l", 
+    category: "jacket", 
+    price: 280
+  },
+
+  { id: 18, 
+    name: "Stone Island Longslev",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FfXZ6Kq0ruJ5q46M6Egfd%2Fasset.png?alt=media&token=38c79750-2e92-4a38-90f0-eb5fde17f154",
+    "art": 8403,
+    "color": "black", 
+    "size" : "s-xl", 
+    category: "sweater", 
+    price: 630
+  },
+
+  { id: 19, 
+    name: "Stone Island Longslev",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FKn8IQt0Lz4yYDhLU175w%2Fasset.png?alt=media&token=7cc36543-9c5a-4246-9d9a-02957620158c",
+    "art": 8404,
+    "color": "white", 
+    "size" : "s-xl", 
+    category: "sweater", 
+    price: 630
+  },
+
+  { id: 20, 
+    name: "LV Premium T-shirt",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2Fv9pP53ZKWjIurlwIMLkE%2Fasset.png?alt=media&token=07dab079-a48f-41b6-be7e-82fe6afff80a",
+    "art": 1915,
+    "color": "black", 
+    "size" : "s-xl", 
+    category: "Tshirt", 
+    price: 299
+  },
+
+  { id: 21, 
+    name: "Stone Islang Vest",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FG4aI2t2HeNEKzHzArdH4%2Fasset.png?alt=media&token=36e82382-464e-48fe-a306-16310c9ef052",
+    "art": 8401,
+    "color": "black|white", 
+    "size" : "m-xl", 
+    category: "jacket", 
+    price: 550
+  },
+
+  { id: 22, 
+    name: "Stone Islang Jacket",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FX3krxcNjeHOuT4Mt4q0p%2Fasset.png?alt=media&token=1ab9a823-7366-4c4f-aecc-0073e9b82e1b",
+    "art": 8402,
+    "color": "black", 
+    "size" : "m-xl", 
+    category: "jacket", 
+    price: 580
+  },
+
+  { id: 23, 
+    name: "Stone Island Jacket Classic Luxury ",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FBaO0qAeQCQTNF6V5k0dJ%2Fasset.png?alt=media&token=acf944be-c0ba-41b3-9582-ffbea6be4977",
+    "art": 8405,
+    "color": "grey|blue", 
+    "size" : "m-xl", 
+    category: "jacket", 
+    price: 799
+  },
 ];
 
 const Catalog = () => {
