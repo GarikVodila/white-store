@@ -18,7 +18,7 @@ const products = [
 
   { id: 2, 
     name: "Moncler Enfant New Maya Down Jacket",
-    img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FgDPfLZ3E8peArBhmQsUs%2Fasset.png?alt=media&token=f11a2b41-868a-4408-bb86-fa820acd1891', 
+    img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F6jFIIQwCaDN2xix3770y%2Fasset.png?alt=media&token=9ceb2586-8379-4b48-9271-fb2161d113e6', 
     art: 1458, 
     category: "jacket",
     price: 799,
