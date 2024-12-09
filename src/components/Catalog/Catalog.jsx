@@ -326,7 +326,7 @@ const products = [
     brand: "lv"
   },
   { id: 31, 
-    name: "Louis Vuitton Sweater",
+    name: "Evisu Boomder",
     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FW6oBiaPAqchDnlryJi5r%2Fasset.png?alt=media&token=db545b67-fa32-4678-a179-a53f2b1d387f",
     "art": 3175,
     "color": "blue", 
