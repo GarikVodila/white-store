@@ -462,7 +462,6 @@ const CatalogBg = () => {
           <p className="catalog__no">No products found</p>
         )}
       </div>
-
     </div>
   );
 };
