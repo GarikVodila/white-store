@@ -9,7 +9,7 @@ const products = [
     img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FsnaQ2HmDAnW76nRUQ16s%2Fasset.png?alt=media&token=15437eef-e60a-44e3-a78c-83eb0089180e', 
     art: 1457, 
     category: "jacket", 
-    price: 799, 
+    price: 999, 
     size : "s-xxl",
     color: "black",
     brand: "moncler"
@@ -20,7 +20,7 @@ const products = [
     img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F6jFIIQwCaDN2xix3770y%2Fasset.png?alt=media&token=9ceb2586-8379-4b48-9271-fb2161d113e6', 
     art: 1458, 
     category: "jacket",
-    price: 799,
+    price: 999,
     size : "s-xxl", 
     color: "white",
     brand: "moncler"
@@ -220,7 +220,7 @@ const products = [
     "color": "black", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 299,
+    price: 549,
     brand: "lv"
   },
 
@@ -256,6 +256,126 @@ const products = [
     price: 799,
     brand: "stone-island"
   },
+  { id: 24, 
+    name: "Stussy Zip Hoodie",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FPbEdEgjFr84NTjW0WWiY%2Fasset.png?alt=media&token=3a81db0e-4093-4329-aa7b-03307b04140c",
+    "art": 4512,
+    "color": "black", 
+    "size" : "s-xl", 
+    category: "hoodie", 
+    price: 350,
+    brand: "stussy",
+  },
+  { id: 25, 
+    name: "Nike X Nocta",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FgGF4NT9NbU5rmZBqjkL3%2Fasset.png?alt=media&token=e10ac2ee-fefe-4d4b-a2e0-43b1aa0aec25",
+    "art": 1355,
+    "color": "black", 
+    "size" : "m-xl", 
+    category: "hoodie", 
+    price: 300,
+    brand: "nike"
+  },
+  { id: 26, 
+    name: "Nike X Nocta",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FK8RrPK1k5Bbzs44fmfR7%2Fasset.png?alt=media&token=d8425a54-35b2-47ee-a363-cc2cf8ebd8b0",
+    "art": 1356,
+    "color": "green", 
+    "size" : "m-xl", 
+    category: "hoodie", 
+    price: 300,
+    brand: "nike"
+  },
+  { id: 27, 
+    name: "Nike X Nocta",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FXONxtREmKUSDUvtaZYUv%2Fasset.png?alt=media&token=ae417d5c-edd0-449f-88df-5de896b3ef9c",
+    "art": 1357,
+    "color": "skyblue", 
+    "size" : "m-xl", 
+    category: "hoodie", 
+    price: 300,
+    brand: "nike"
+  },
+  { id: 28, 
+    name: "Louis Vuitton Sweater",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FidsOmwcobV4uT7JLDOJp%2Fasset.png?alt=media&token=e4105110-4d88-4d69-b2b1-5d35e45f83df",
+    "art": 1867,
+    "color": "black", 
+    "size" : "s-l", 
+    category: "sweater", 
+    price: 850,
+    brand: "lv"
+  },
+  { id: 29, 
+    name: "Louis Vuitton Sweater",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FF33nTTbncw8Mka5iXJvr%2Fasset.png?alt=media&token=0bc43e57-9e01-4ae4-93c5-40598a699ad2",
+    "art": 1868,
+    "color": "red", 
+    "size" : "s-l", 
+    category: "sweater", 
+    price: 850,
+    brand: "lv"
+  },
+  { id: 30, 
+    name: "Louis Vuitton Sweater",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FCAWsgPOtkkCG4DDGhiZe%2Fasset.png?alt=media&token=c5541055-1d18-4806-b7fe-10f0685955b9",
+    "art": 1869,
+    "color": "blue", 
+    "size" : "s-l", 
+    category: "sweater", 
+    price: 850,
+    brand: "lv"
+  },
+  { id: 31, 
+    name: "Evisu Boomder",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FW6oBiaPAqchDnlryJi5r%2Fasset.png?alt=media&token=db545b67-fa32-4678-a179-a53f2b1d387f",
+    "art": 3175,
+    "color": "blue", 
+    "size" : "s-xl", 
+    category: "jacket", 
+    price: 549,
+    brand: "evisu"
+  },
+  { id: 32, 
+    name: "Ralph Lauren Sweater",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FjeYPDXpORHgJqXhZW7zy%2Fasset.png?alt=media&token=25bbc31a-050d-4f61-8aa0-a579c988716c",
+    "art": 1415,
+    "color": "cream", 
+    "size" : "s-xl", 
+    category: "sweater", 
+    price: 149,
+    brand: "ralph-lauren"
+  },
+  { id: 33, 
+    name: "Ralph Lauren Sweater",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FLOgHJUBlfhBayOAJBhSd%2Fasset.png?alt=media&token=c004c460-4457-45fa-ae62-93460abd2564",
+    "art": 1415,
+    "color": "black", 
+    "size" : "s-xl", 
+    category: "sweater", 
+    price: 149,
+    brand: "ralph-lauren"
+  },
+  { id: 34, 
+    name: "Ralph Lauren Sweater",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FSTXXRAnSfjz8tG7zIniT%2Fasset.png?alt=media&token=c89106f2-0c2f-4f9f-8426-7c594e344673",
+    "art": 1425,
+    "color": "cream", 
+    "size" : "s-xl", 
+    category: "jacket", 
+    price: 280,
+    brand: "ralph-lauren"
+  },
+  { id: 35, 
+    name: "Ralph Lauren Sweater",
+    img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FQPx3i9UIvbzLsy8WIjzW%2Fasset.png?alt=media&token=5b0ab81d-91cd-4ec2-ab84-15ecf897c574",
+    "art": 1426,
+    "color": "coffee", 
+    "size" : "s-xl", 
+    category: "jacket", 
+    price: 280,
+    brand: "ralph-lauren"
+  },
 ];
 const CatalogBg = () => {
   const [category, setCategory] = useState("all");
@@ -273,7 +393,7 @@ const CatalogBg = () => {
     <div className="catalog-row">
 
       <div className="filter__container">
-        <p className="brend__title">Марки</p>
+        <p className="brend__title">Филтър</p>
         <div className="brend__type-row">
             <label className="brend__type-name" htmlFor="category">Тип облекло:</label>
             <select className="brend__type-system"
