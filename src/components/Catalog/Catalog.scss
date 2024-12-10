@@ -286,14 +286,6 @@
     font-weight: 700;
     transition: 1s all;
 
-    &:hover {
-        width: 130px;
-        height: 130px;
-        color: #e74c3c;
-        border: 1px solid #e74c3c;
-        padding-top: 35px;
-    }
-
     @media (max-width:460px) {
         position: fixed;
         left: 10px;
@@ -302,12 +294,5 @@
         height: 85px;
         font-size: 15px;
         padding-top: 24px;
-
-        &:hover{
-        width: 85px;
-        height: 85px;
-        font-size: 15px;
-        padding-top: 24px;
-        }
     }
 }
