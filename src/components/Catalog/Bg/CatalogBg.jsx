@@ -462,6 +462,7 @@ const CatalogBg = () => {
           <p className="catalog__no">No products found</p>
         )}
       </div>
+      <a href="https://t.me/managerWhitestore" target="blank" className="buy-btn">Готов за поръчка?</a>
     </div>
   );
 };
