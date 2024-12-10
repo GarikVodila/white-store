@@ -143,7 +143,7 @@ const products = [
     "color": "black", 
     "size" : "xs-l", 
     category: "Tshirt", 
-    price: 200 ,
+    price: 450 ,
     brand: "balenciaga"
   },
 
