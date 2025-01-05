@@ -8,7 +8,7 @@ const products = [
     img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FsnaQ2HmDAnW76nRUQ16s%2Fasset.png?alt=media&token=15437eef-e60a-44e3-a78c-83eb0089180e', 
     art: 1457, 
     category: "jacket", 
-    price: 999, 
+    price: 699, 
     size : "s-xxl",
     color: "black",
     brand: "moncler"
@@ -19,7 +19,7 @@ const products = [
     img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F6jFIIQwCaDN2xix3770y%2Fasset.png?alt=media&token=9ceb2586-8379-4b48-9271-fb2161d113e6', 
     art: 1458, 
     category: "jacket",
-    price: 999,
+    price: 699,
     size : "s-xxl", 
     color: "white",
     brand: "moncler"
@@ -32,7 +32,7 @@ const products = [
     color: "pink", 
     size: "m-xl", 
     category: "hoodie", 
-    price: 450 ,
+    price: 400 ,
     brand: "bape"
   },
 
@@ -43,7 +43,7 @@ const products = [
     "color": "red", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 450 ,
+    price: 400 ,
     brand: "bape"
   },
 
@@ -54,7 +54,7 @@ const products = [
     "color": "grey", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 450  ,
+    price: 400  ,
     brand: "bape"
   },
 
@@ -65,7 +65,7 @@ const products = [
     "color": "blue", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 450  ,
+    price: 400  ,
     brand: "bape"
   },
 
@@ -76,7 +76,7 @@ const products = [
     "color": "purple", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 450  ,
+    price: 400  ,
     brand: "bape"
   },
 
@@ -87,7 +87,7 @@ const products = [
     "color": "grey", 
     "size" : "m-xl", 
     category: "sport-suit", 
-    price: 300  ,
+    price: 299  ,
     brand: "nike"
   },
 
@@ -98,7 +98,7 @@ const products = [
     "color": "white", 
     "size" : "m-xl", 
     category: "sport-suit", 
-    price: 300 ,
+    price: 299 ,
     brand: "nike"
   },
 
@@ -109,7 +109,7 @@ const products = [
     "color": "black", 
     "size" : "m-xl", 
     category: "sport-suit", 
-    price: 300 ,
+    price: 299 ,
     brand: "nike"
   },
 
@@ -120,7 +120,7 @@ const products = [
     "color": "red", 
     "size" : "m-xl", 
     category: "sport-suit", 
-    price: 300 ,
+    price: 299 ,
     brand: "nike"
   },
 
@@ -131,7 +131,7 @@ const products = [
     "color": "black", 
     "size" : "m-xl", 
     category: "sweater", 
-    price: 600 ,
+    price: 420 ,
     brand: "lv"
   },
 
@@ -142,7 +142,7 @@ const products = [
     "color": "black", 
     "size" : "xs-l", 
     category: "Tshirt", 
-    price: 450 ,
+    price: 270 ,
     brand: "balenciaga"
   },
 
@@ -153,7 +153,7 @@ const products = [
     "color": "white", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 180 ,
+    price: 160 ,
     brand: "stussy"
   },
 
@@ -164,7 +164,7 @@ const products = [
     "color": "white", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 180 ,
+    price: 160 ,
     brand: "stussy"
   },
 
@@ -175,7 +175,7 @@ const products = [
     "color": "white", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 140 ,
+    price: 120 ,
     brand: "stussy"
   },
 
@@ -186,7 +186,7 @@ const products = [
     "color": "black", 
     "size" : "xs-l", 
     category: "jacket", 
-    price: 280,
+    price: 260,
     brand: "stussy"
   },
 
@@ -197,7 +197,7 @@ const products = [
     "color": "black", 
     "size" : "s-xl", 
     category: "sweater", 
-    price: 630,
+    price: 430,
     brand: "stone-island"
   },
 
@@ -208,7 +208,7 @@ const products = [
     "color": "white", 
     "size" : "s-xl", 
     category: "sweater", 
-    price: 630,
+    price: 430,
     brand: "stone-island"
   },
 
@@ -219,7 +219,7 @@ const products = [
     "color": "black", 
     "size" : "s-xl", 
     category: "Tshirt", 
-    price: 549,
+    price: 299,
     brand: "lv"
   },
 
@@ -230,7 +230,7 @@ const products = [
     "color": "black|white", 
     "size" : "m-xl", 
     category: "jacket", 
-    price: 550,
+    price: 399,
     brand: "stone-island"
   },
 
@@ -241,7 +241,7 @@ const products = [
     "color": "black", 
     "size" : "m-xl", 
     category: "jacket", 
-    price: 580,
+    price: 420,
     brand: "stone-island"
   },
 
@@ -252,7 +252,7 @@ const products = [
     "color": "grey|blue", 
     "size" : "m-xl", 
     category: "jacket", 
-    price: 799,
+    price: 499,
     brand: "stone-island"
   },
   { id: 24, 
@@ -262,7 +262,7 @@ const products = [
     "color": "black", 
     "size" : "s-xl", 
     category: "hoodie", 
-    price: 350,
+    price: 250,
     brand: "stussy",
   },
   { id: 25, 
@@ -272,7 +272,7 @@ const products = [
     "color": "black", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 300,
+    price: 270,
     brand: "nike"
   },
   { id: 26, 
@@ -282,7 +282,7 @@ const products = [
     "color": "green", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 300,
+    price: 270,
     brand: "nike"
   },
   { id: 27, 
@@ -292,7 +292,7 @@ const products = [
     "color": "skyblue", 
     "size" : "m-xl", 
     category: "hoodie", 
-    price: 300,
+    price: 270,
     brand: "nike"
   },
   { id: 28, 
@@ -302,7 +302,7 @@ const products = [
     "color": "black", 
     "size" : "s-l", 
     category: "sweater", 
-    price: 850,
+    price: 450,
     brand: "lv"
   },
   { id: 29, 
@@ -312,7 +312,7 @@ const products = [
     "color": "red", 
     "size" : "s-l", 
     category: "sweater", 
-    price: 850,
+    price: 450,
     brand: "lv"
   },
   { id: 30, 
@@ -322,7 +322,7 @@ const products = [
     "color": "blue", 
     "size" : "s-l", 
     category: "sweater", 
-    price: 850,
+    price: 450,
     brand: "lv"
   },
   { id: 31, 
@@ -332,7 +332,7 @@ const products = [
     "color": "blue", 
     "size" : "s-xl", 
     category: "jacket", 
-    price: 549,
+    price: 450,
     brand: "evisu"
   },
   { id: 32, 
