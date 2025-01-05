@@ -416,7 +416,7 @@ const Catalog = () => {
             className="brend__price-input"
             id="price"
             type="range"
-            min="140"
+            min="120"
             max="1500"
             value={priceRange}
             onChange={(e) => setPriceRange(Number(e.target.value))}
