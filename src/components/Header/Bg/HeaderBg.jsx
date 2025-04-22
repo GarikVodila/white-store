@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 import  Carusel  from '../../Carusel/Carusel'
 
@@ -22,7 +23,14 @@ function HeaderBg() {
                         <Logo className="logo"></Logo>
                     </div>
 
-                    <Carusel></Carusel>
+                    <div className="header__nav">
+                        <h1 className="header__nav-title">White Store</h1>
+                        <div className="header__nav-wrap">
+                            <Link className="header__nav-wrap-item">За нас</Link>
+                            <Link className="header__nav-wrap-item">Система за поръчка</Link>
+                            <Link className="header__nav-wrap-item">Подкрепа</Link>
+                        </div>
+                    </div>
 
                     <div className="header__menu">
                         <div className="header__navBar">

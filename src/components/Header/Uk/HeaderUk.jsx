@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-
-import  Carusel  from '../../Carusel/Carusel'
+import { Link } from 'react-router-dom';
 
 import Logo from '../icons/logotipe.svg?react';
 import Inst from '../icons/insta.svg?react'
 import Tg from '../icons/tg.svg?react'
 import Tt from '../icons/tt.svg?react'
-import Bul from '../icons/bul.svg?react'
-import Ukr from '../icons/ukr.svg?react'
 
 import '../Header.scss'
 
@@ -21,7 +18,14 @@ function HeaderUk() {
                         <Logo className="logo"></Logo>
                     </div>
 
-                    <Carusel></Carusel>
+                    <div className="header__nav">
+                        <h1 className="header__nav-title">White Store</h1>
+                        <div className="header__nav-wrap">
+                            <Link className="header__nav-wrap-item">About Us</Link>
+                            <Link className="header__nav-wrap-item">Order system</Link>
+                            <Link className="header__nav-wrap-item">Support</Link>
+                        </div>
+                    </div>
 
                     <div className="header__menu">
                         <div className="header__navBar">
