@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
-import  Carusel  from '../Carusel/Carusel'
-
 import Logo from './icons/logotipe.svg?react';
 import Inst from './icons/insta.svg?react'
 import Tg from './icons/tg.svg?react'
@@ -22,7 +20,14 @@ function Header() {
                         <Logo className="logo"></Logo>
                     </div>
 
-                    <Carusel></Carusel>
+                    <div className="header__nav">
+                        <h1 className="header__nav-title">White Store</h1>
+                        <div className="header__nav-wrap">
+                            <Link className="header__nav-wrap-item">О нас</Link>
+                            <Link className="header__nav-wrap-item">Система заказов</Link>
+                            <Link className="header__nav-wrap-item">Поддержка</Link>
+                        </div>
+                    </div>
 
                     <div className="header__menu">
                         <div className="header__navBar">

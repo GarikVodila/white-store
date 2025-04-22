@@ -464,7 +464,6 @@ const Catalog = () => {
           <p className="catalog__no">No products found</p>
         )}
       </div>
-      <a href="https://t.me/managerWhitestore" target="blank" className="buy-btn">Готов сделать заказ?</a>
     </div>
   );
 };

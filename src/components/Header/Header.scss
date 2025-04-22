@@ -21,10 +21,15 @@
     background-color: #212121;
 
     &__container {
-        width: 80%;
-        margin: 0 10%;
+        width: 78%;
+        margin: 0 11%;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width:850px) {
+            width: 88%;
+            margin: 0 6%;
+        }
 
         @media (max-width:450px) {
             justify-content: space-around;
@@ -50,6 +55,61 @@
             margin-right: 10px;
         }
     }
+
+    &__nav {
+        width: 50%;
+        padding-top: 7px;
+        box-sizing: border-box;
+        
+
+        &-title{
+            font-size: 36px;
+            color: #f1f2f6;
+            font-family: "Winky Rough", sans-serif;
+            text-align: center;
+            text-shadow:
+            0.5px 0.5px 1px #CAD3C8,
+            0 0 0.5em #CAD3C8,
+            0 0 0.1em #CAD3C8;
+
+            @media (max-width:450px) {
+                font-size: 26px;
+            }
+        }
+
+        &-wrap{
+            display: flex;
+            width: 100%;
+            padding: 0 10%;
+            margin-top: 10px;
+            justify-content: space-between;
+
+
+            @media (max-width:850px) {
+                padding: 0 7%;
+            }
+
+            @media (max-width:450px) {
+                padding: 0;
+            }
+
+            &-item {
+                font-size: 22px;
+                text-decoration: none;
+                color: #CAD3C8;
+                transition: 0.5s;
+
+                @media (max-width:850px) {
+                    font-size: 18;
+                }
+
+                @media (max-width:450px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
 
     &__navBar {
         width: 100%;

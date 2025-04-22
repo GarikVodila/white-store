@@ -30,11 +30,10 @@
     &__item {
         width: 20%;
         height: 350px;
-        background-color: #212121;
+        background-color: #1e1e1e;
         border-radius: 3px;
         padding: 10px 7px;
-        box-sizing: border-box;
-        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+        box-shadow: 6px 6px 6px 2px rgb(220, 221, 225,0.15);
         box-sizing: border-box;
 
         filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
@@ -266,33 +265,5 @@
         &-input {
             width: 100%;
         }
-    }
-}
-
-.buy-btn {
-    position: fixed;
-    left: 60px;
-    bottom: 110px;
-    width: 120px;
-    height: 120px;
-    background-color: #212121;
-    border-radius: 100%;
-    border: 1px solid #c0392b;
-    text-align: center;
-    padding-top: 35px;
-    text-decoration: none;
-    color: #c0392b;
-    font-size: 20px;
-    font-weight: 700;
-    transition: 1s all;
-
-    @media (max-width:460px) {
-        position: fixed;
-        left: 10px;
-        bottom: 70px;
-        width: 85px;
-        height: 85px;
-        font-size: 15px;
-        padding-top: 24px;
     }
 }
