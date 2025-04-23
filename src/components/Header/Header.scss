@@ -71,6 +71,9 @@
             0.5px 0.5px 1px #CAD3C8,
             0 0 0.5em #CAD3C8,
             0 0 0.1em #CAD3C8;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;   
 
             @media (max-width:450px) {
                 font-size: 26px;

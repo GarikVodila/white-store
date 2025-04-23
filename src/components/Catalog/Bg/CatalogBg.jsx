@@ -394,54 +394,57 @@ const CatalogBg = () => {
 
       <div className="filter__container">
         <p className="brend__title">Филтър</p>
-        <div className="brend__type-row">
-            <label className="brend__type-name" htmlFor="category">Тип облекло:</label>
-            <select className="brend__type-system"
-            id="category"
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            >
-                <option className="brend__type-item" value="all">Всички</option>
-                <option className="brend__type-item" value="jacket">Яке</option>
-                <option className="brend__type-item" value="hoodie">Kачулка</option>
-                <option className="brend__type-item" value="sweater">Пуловер</option>
-                <option className="brend__type-item" value="sport-suit">Спортен костюм</option>
-                <option className="brend__type-item" value="Tshirt">Tениска</option>
-            </select>
-        </div>
+        <div className="firlter-row">
+          <div className="brend__type-row">
+              <label className="brend__type-name" htmlFor="category">Вид одежды:</label>
+              <select className="brend__type-system"
+              id="category"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              >
+                  <option className="brend__type-item" value="all">Всички</option>
+                  <option className="brend__type-item" value="jacket">Яке</option>
+                  <option className="brend__type-item" value="hoodie">Kачулка</option>
+                  <option className="brend__type-item" value="sweater">Пуловер</option>
+                  <option className="brend__type-item" value="sport-suit">Спортен костюм</option>
+                  <option className="brend__type-item" value="Tshirt">Tениска</option>
+              </select>
+          </div>
 
-        <div className="brend__price">
-            <p className="brend__price-title" htmlFor="price">Цена: {priceRange}Lv</p>
-            <input
-            className="brend__price-input"
-            id="price"
-            type="range"
-            min="120"
-            max="1500"
-            value={priceRange}
-            onChange={(e) => setPriceRange(Number(e.target.value))}
-            />
-        </div>
+          <div className="brend__price">
+              <p className="brend__price-title" htmlFor="price">Цена: {priceRange}Lv</p>
+              <input
+              className="brend__price-input"
+              id="price"
+              type="range"
+              min="120"
+              max="1500"
+              value={priceRange}
+              onChange={(e) => setPriceRange(Number(e.target.value))}
+              />
+          </div>
 
-        <div className="brend__box">
-          <p className="brend__box-title">Бренды</p>
-            <select className="brend__box-system"
-                id="brand"
-                value={brand}
-                onChange={(e) => setBrand(e.target.value)}
-                >
-                <option className="brend__box-item" value="all">Всички</option>
-                <option className="brend__box-item" value="bape">Bape</option>
-                <option className="brend__box-item" value="stone-island">Stone Island</option>
-                <option className="brend__box-item" value="lv">LOUIS VUITTON</option>
-                <option className="brend__box-item" value="moncler">Moncler</option>
-                <option className="brend__box-item" value="nike">Nike</option>
-                <option className="brend__box-item" value="stussy">Stussy</option>
-            </select>
+          <div className="brend__box">
+            <p className="brend__box-title">Марки </p>
+              <select className="brend__box-system"
+                  id="brand"
+                  value={brand}
+                  onChange={(e) => setBrand(e.target.value)}
+                  >
+                  <option className="brend__box-item" value="all">Всички</option>
+                  <option className="brend__box-item" value="bape">Bape</option>
+                  <option className="brend__box-item" value="stone-island">Stone Island</option>
+                  <option className="brend__box-item" value="lv">LOUIS VUITTON</option>
+                  <option className="brend__box-item" value="moncler">Moncler</option>
+                  <option className="brend__box-item" value="nike">Nike</option>
+                  <option className="brend__box-item" value="stussy">Stussy</option>
+                  <option className="brend__box-item" value="evisu">Evisu</option>
+                  <option className="brend__box-item" value="ralph-lauren">Ralph Lauren</option>
+              </select>
+          </div>
         </div>
       </div>
 
-      
       {/* Список отфильтрованных товаров */}
 
       <div className="catalog__system ">
