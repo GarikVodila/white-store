@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
-import Logo from '../icons/logotipe.svg?react';
+import Logo from '../icons/new-logo.svg?react';
 import Inst from '../icons/insta.svg?react'
 import Tg from '../icons/tg.svg?react'
 import Tt from '../icons/tt.svg?react'
@@ -14,9 +14,7 @@ function HeaderUk() {
             <header className="header">
 
                 <div className="header__container">
-                    <div className="header__logo">
-                        <Logo className="logo"></Logo>
-                    </div>
+                    <Logo className='header__logo'></Logo>
 
                     <div className="header__nav">
                         <h1 className="header__nav-title">White Store</h1>

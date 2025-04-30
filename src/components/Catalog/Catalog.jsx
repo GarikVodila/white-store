@@ -5,7 +5,9 @@ import './Catalog.scss'
 const products = [
   { id: 1, 
     name: "Moncler Enfant New Maya Down Jacket", 
-    img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FsnaQ2HmDAnW76nRUQ16s%2Fasset.png?alt=media&token=15437eef-e60a-44e3-a78c-83eb0089180e', 
+    img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FsnaQ2HmDAnW76nRUQ16s%2Fasset.png?alt=media&token=15437eef-e60a-44e3-a78c-83eb0089180e',
+    img2:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F6jFIIQwCaDN2xix3770y%2Fasset.png?alt=media&token=9ceb2586-8379-4b48-9271-fb2161d113e6', 
+    img3: '',
     art: 1457, 
     category: "jacket", 
     price: 699, 
@@ -388,7 +390,6 @@ const Catalog = () => {
     const matchesBrend = brand === "all" || product.brand === brand;
     return matchesCategory && matchesPrice && matchesBrend;
   });
-
   return (
     <div className="catalog-row">
       <div className="filter__container">
@@ -411,7 +412,7 @@ const Catalog = () => {
           </div>
 
           <div className="brend__price">
-              <p className="brend__price-title" htmlFor="price">Цена: {priceRange}Lv</p>
+              <p className="brend__price-title" htmlFor="price">Цена:{priceRange}Lv</p>
               <input
               className="brend__price-input"
               id="price"
@@ -453,6 +454,12 @@ const Catalog = () => {
             <div className="catalog__item" key={product.id}>
                 <p className="catalog__item-art">art:{product.art}</p>
                 <img className="catalog__item-img" src={product.img} alt="#" />
+                {/* <div className="slider">
+                  <div className="slider-row">
+                    <img className="catalog__item-img" src={product.img} alt="#" />
+                    <img className="catalog__item-img" src={product.img} alt="#" />
+                  </div>
+                </div> */}
                 <h3 className="catalog__item-title">{product.name}</h3>
                 <div className="catalog__item-row">
                     <p className="catalog__item-size">{product.size}</p>
