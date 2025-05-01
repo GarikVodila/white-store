@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import './Catalog.scss'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+
 // Пример данных
 const products = [
   { id: 1, 
     name: "Moncler Enfant New Maya Down Jacket", 
     img:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FsnaQ2HmDAnW76nRUQ16s%2Fasset.png?alt=media&token=15437eef-e60a-44e3-a78c-83eb0089180e',
-    img2:'https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F6jFIIQwCaDN2xix3770y%2Fasset.png?alt=media&token=9ceb2586-8379-4b48-9271-fb2161d113e6', 
-    img3: '',
     art: 1457, 
     category: "jacket", 
     price: 699, 
@@ -393,6 +396,26 @@ const Catalog = () => {
   return (
     <div className="catalog-row">
       <div className="filter__container">
+      <p className="top-buy">Топ Продаж</p>
+      <Swiper
+          modules={[Navigation]}
+          spaceBetween={20}
+          slidesPerView={3}
+          navigation
+          breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          }}
+        >
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <div className="p-4 border rounded-xl shadow-sm bg-white text-center">
+                <img className="catalog__item-img" src={product.img} alt="#" />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <p className="brend__title">Фильтр</p>
         <div className="firlter-row">
           <div className="brend__type-row">
@@ -443,9 +466,7 @@ const Catalog = () => {
               </select>
           </div>
         </div>
-      </div>
-
-      
+      </div>      
       {/* Список отфильтрованных товаров */}
 
       <div className="catalog__system ">
@@ -453,13 +474,26 @@ const Catalog = () => {
           filteredProducts.map((product) => (
             <div className="catalog__item" key={product.id}>
                 <p className="catalog__item-art">art:{product.art}</p>
+                {/* <Swiper
+                  modules={[Navigation]}
+                  spaceBetween={20}
+                  slidesPerView={3}
+                  navigation
+                  breakpoints={{
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                  }}
+                >
+                {products.map((product) => (
+                  <SwiperSlide key={product.id}>
+                    <div className="p-4 border rounded-xl shadow-sm bg-white text-center">
+                      <img className="catalog__item-img" src={product.img} alt="#" />
+                    </div>
+                  </SwiperSlide>
+                  ))}
+                </Swiper> */}
                 <img className="catalog__item-img" src={product.img} alt="#" />
-                {/* <div className="slider">
-                  <div className="slider-row">
-                    <img className="catalog__item-img" src={product.img} alt="#" />
-                    <img className="catalog__item-img" src={product.img} alt="#" />
-                  </div>
-                </div> */}
                 <h3 className="catalog__item-title">{product.name}</h3>
                 <div className="catalog__item-row">
                     <p className="catalog__item-size">{product.size}</p>
