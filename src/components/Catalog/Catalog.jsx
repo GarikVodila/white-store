@@ -396,7 +396,7 @@ const Catalog = () => {
   return (
     <div className="catalog-row">
       <div className="filter__container">
-      <p className="top-buy">TOP sales</p>
+      <p className="top-buy">Топ продаж</p>
       <Swiper
           modules={[Navigation]}
           spaceBetween={20}
