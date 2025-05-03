@@ -2,6 +2,11 @@ import React, { useState } from "react";
 
 import '../Catalog.scss'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+
 // Пример данных
 const products = [
   { id: 1, 
@@ -393,6 +398,34 @@ const CatalogBg = () => {
     <div className="catalog-row">
 
       <div className="filter__container">
+
+      <p className="top-buy">Лучшие продажи</p>
+      <Swiper
+          modules={[Navigation]}
+          spaceBetween={20}
+          slidesPerView={3}
+          navigation
+          breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          }}
+        >
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <div className="p-4 border rounded-xl shadow-sm bg-white text-center">
+                <img className="catalog__item-img" src={product.img} alt="#" />
+                <h3 className="catalog__item-title">{product.name}</h3>
+                <div className="catalog__item-row">
+                    <p className="catalog__item-size">{product.size}</p>
+                    <p className="catalog__item-color">{product.color}</p>
+                </div>
+                <p className="catalog__item-prise" >{product.price}Lv</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
         <p className="brend__title">Филтър</p>
         <div className="firlter-row">
           <div className="brend__type-row">

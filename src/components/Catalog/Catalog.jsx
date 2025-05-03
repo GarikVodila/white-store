@@ -396,7 +396,7 @@ const Catalog = () => {
   return (
     <div className="catalog-row">
       <div className="filter__container">
-      <p className="top-buy">Топ Продаж</p>
+      <p className="top-buy">TOP sales</p>
       <Swiper
           modules={[Navigation]}
           spaceBetween={20}
@@ -412,6 +412,12 @@ const Catalog = () => {
             <SwiperSlide key={product.id}>
               <div className="p-4 border rounded-xl shadow-sm bg-white text-center">
                 <img className="catalog__item-img" src={product.img} alt="#" />
+                <h3 className="catalog__item-title">{product.name}</h3>
+                <div className="catalog__item-row">
+                    <p className="catalog__item-size">{product.size}</p>
+                    <p className="catalog__item-color">{product.color}</p>
+                </div>
+                <p className="catalog__item-prise" >{product.price}Lv</p>
               </div>
             </SwiperSlide>
           ))}
