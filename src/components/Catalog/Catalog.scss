@@ -2,7 +2,7 @@
     display: flex;
     overflow: auto;
     position: relative;
-    height: inherit;
+    height: auto;
     width: 90%;
     margin: 0 5%;
 
@@ -58,10 +58,9 @@
 
     &__item {
         width: 20%;
-        // height: 350px;
         background-color: #1e1e1e;
         border-radius: 3px;
-        padding: 10px 7px;
+        padding: 10px 10px 20px 10px;
         box-shadow: 6px 6px 6px 2px rgb(220, 221, 225,0.15);
         box-sizing: border-box;
 
@@ -94,12 +93,16 @@
         }
 
         &-img {
-            width: inherit;
             border-radius: 5px;
             display: block;
             margin: 0 auto;
             box-sizing: border-box;
             width: 100%;
+            height: auto;
+        }
+
+        &-addimg {
+            width: 90%;
         }
 
         &-row {
@@ -115,6 +118,7 @@
         }
 
         &-size {
+            width: 35%;
             font-size: 18px;
             font-weight: 600;
             color: #CAD3C8;
@@ -127,10 +131,12 @@
         }
 
         &-color {
+            width: 55%;
             font-size: 18px;
             font-weight: 600;
             color: #CAD3C8;
             word-break: break-all;
+            text-align: right;
 
             @media (max-width:750px) {
                 font-size: 16px;;

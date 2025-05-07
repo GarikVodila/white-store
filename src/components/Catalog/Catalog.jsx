@@ -5,9 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 
 // Пример данных
 // const products = [
@@ -390,8 +387,6 @@ const products = [
       name: "Nike Air Force 1 Low '07 LV8", 
       image:[
         'https://i.ibb.co/fz9J0LRT/acetone-202557-14312-993-1.png',
-        'https://i.ibb.co/HTNKYQP0/acetone-202557-145548-640-1.png',
-        'https://i.ibb.co/HTNKYQP0/acetone-202557-145548-640-1.png'
       ],
       art: 2560, 
       category: "shoose", 
@@ -399,7 +394,98 @@ const products = [
       size : "39-45",
       color: "Desert Khaki Black",
       brand: "nike"
-    },]
+    },
+    { id: 2, 
+      name: "Nike AIR FORCE 1 MID",
+      image:[
+        'https://i.ibb.co/KxV1Hvkz/2025-05-07-173314938-1.png',
+        'https://i.ibb.co/x9zJVdY/2025-05-07-173528761.png'
+      ], 
+      art: 2561, 
+      category: "shoose",
+      price: 179,
+      size : "36-45", 
+      color: "White",
+      brand: "nike"
+    },
+    { id: 3, 
+      name: "Nike Dunk Low University",
+      image:[
+        'https://i.ibb.co/TBgxrVrR/2025-05-07-170704092.png',
+        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/59f2c068-a00a-49b3-8f16-e59ab625c39b/dunk-low-white-and-university-red-cu1727-100-release-date.jpg',
+        'https://i.ibb.co/38v6JvF/acetone-202557-15428-242.png',
+        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/b7989758-77dd-43e0-b5ad-5377f9574aa5/dunk-low-university-blue-release-date.jpg'
+      ], 
+      art: 2562, 
+      category: "shoose",
+      price: 189,
+      size : "36-45", 
+      color: "red|blue",
+      brand: "nike"
+    },
+    { id: 4, 
+      name: "Grateful Dead SB Dunk Mid",
+      image:[
+        'https://i.ibb.co/fd0TMtWQ/2025-05-07-170927465.png',
+        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/14aeea6a-cd6a-44e1-b417-0fbf77266456/sb-dunk-low-pro-x-grateful-dead-opti-yellow-release-date.jpg',
+        'https://i.ibb.co/bjJmXgP1/acetone-202557-171636-29-1.png',
+        'https://i.ibb.co/14Prbct/2025-05-07-171909207-Photoroom.png',
+        'https://i.ibb.co/4gCVT6s5/2025-05-07-172117544-Photoroom.png',
+        'https://i.ibb.co/sdf0vZQY/2025-05-07-172223993-Photoroom.png'
+      ], 
+      art: 2563, 
+      category: "shoose",
+      price: 199,
+      size : "36-45", 
+      color: "Opti Yellow|Green Bear| Orange Bear",
+      brand: "nike"
+    },
+    { id: 5, 
+      name: "Nike SB Dunk Low Club 58 Gulf Racing Blue Chill",
+      image:[
+        'https://i.ibb.co/gLrJsZP1/2025-05-07-174358368-Photoroom.png',
+        'https://i.ibb.co/j9bG8Dqp/2025-05-07-174633384-Photoroom.png'
+      ], 
+      art: 2564, 
+      category: "shoose",
+      price: 189,
+      size : "36-45", 
+      color: "Racing Blue",
+      brand: "nike"
+    },
+    { id: 6, 
+      name: "Air Jordan 1 Mid",
+      image:[
+        'https://i.ibb.co/3ykQ9j8Q/2025-05-07-174902439.png',
+        'https://i.ibb.co/qF99KrqM/2025-05-07-175107936.png',
+        'https://i.ibb.co/Fq7P217W/2025-05-07-175827294.png',
+        'https://i.ibb.co/YFLxf4nY/2025-05-07-180054473-Photoroom.png'
+      ], 
+      art: 2565, 
+      category: "shoose",
+      price: 189,
+      size : "36-45", 
+      color: "Game Royal Black White|Berry",
+      brand: "nike"
+    },
+    { id: 7, 
+      name: "Air Jordan 4 Retro",
+      image:[
+        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/21570299-6494-47c1-b583-93903ec82552/air-jordan-4-red-cement-dh6927-161-release-date.jpg',
+        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/7f29caac-0e3f-4d6e-a603-35b5d66b468b/air-jordan-4-red-cement-dh6927-161-release-date.jpg',
+        'https://i.ibb.co/rK8vF64Q/2025-05-07-180818682.png',
+        'https://i.ibb.co/RG8986DR/2025-05-07-180956444.png',
+        'https://i.ibb.co/60zR7T2t/2025-05-07-181319269-1.png',
+        'https://i.ibb.co/VWQyD1p1/2025-05-07-181602766.png'
+      ], 
+      art: 2567, 
+      category: "shoose",
+      price: 209,
+      size : "36-47", 
+      color: "Red Cement|Vivid Sulfur",
+      brand: "nike"
+    },
+  ]
 
 
 const Catalog = () => {
@@ -431,7 +517,7 @@ const Catalog = () => {
           {products.map((product) => (
             <SwiperSlide key={product.id}>
               <div className="p-4 border rounded-xl shadow-sm bg-white text-center">
-                <img className="catalog__item-img" src={product.img} alt="#" />
+                <img className="catalog__item-addimg" src={product.image} alt="#" />
                 <h3 className="catalog__item-title">{product.name}</h3>
                 <div className="catalog__item-row">
                     <p className="catalog__item-size">{product.size}</p>
