@@ -471,10 +471,10 @@ const products = [
     { id: 7, 
       name: "Air Jordan 4 Retro",
       image:[
-        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/21570299-6494-47c1-b583-93903ec82552/air-jordan-4-red-cement-dh6927-161-release-date.jpg',
-        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/7f29caac-0e3f-4d6e-a603-35b5d66b468b/air-jordan-4-red-cement-dh6927-161-release-date.jpg',
         'https://i.ibb.co/rK8vF64Q/2025-05-07-180818682.png',
         'https://i.ibb.co/RG8986DR/2025-05-07-180956444.png',
+        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/21570299-6494-47c1-b583-93903ec82552/air-jordan-4-red-cement-dh6927-161-release-date.jpg',
+        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/7f29caac-0e3f-4d6e-a603-35b5d66b468b/air-jordan-4-red-cement-dh6927-161-release-date.jpg',
         'https://i.ibb.co/60zR7T2t/2025-05-07-181319269-1.png',
         'https://i.ibb.co/VWQyD1p1/2025-05-07-181602766.png'
       ], 
@@ -482,8 +482,96 @@ const products = [
       category: "shoose",
       price: 209,
       size : "36-47", 
-      color: "Red Cement|Vivid Sulfur",
+      color: "Vivid Sulfur|Red Cement|Smoke Grey",
       brand: "nike"
+    },
+    { id: 8, 
+      name: "New Balance Sneakers Classics M1906AD",
+      image:[
+        'https://i.ibb.co/ynbdWNn7/2025-05-07-220848387.png',
+        'https://i.ibb.co/XxD30cW3/2025-05-07-221118076.png'
+      ], 
+      art: 3801, 
+      category: "shoose",
+      price: 169,
+      size : "36-45", 
+      color: "Silver Metallic",
+      brand: "nb"
+    },
+    { id: 9, 
+      name: "New Balance M1000",
+      image:[
+        'https://i.ibb.co/7Jf95Sft/2025-05-07-221835398.png',
+        'https://i.ibb.co/0pJW9K21/2025-05-07-222228119.png',
+        'https://i.ibb.co/C3zMjQ4s/2025-05-07-222336745.png',
+        'https://i.ibb.co/3myNqv9C/2025-05-07-222510277.png'
+      ], 
+      art: 3802, 
+      category: "shoose",
+      price: 219,
+      size : "36-45", 
+      color: "Purple|Blue",
+      brand: "nb"
+    },
+    { id: 10, 
+      name: "Adidas Gazelle Bold W",
+      image:[
+        'https://i.ibb.co/hJ1KGDNZ/2025-05-07-223413786-Photoroom.png',
+        'https://i.ibb.co/WW2fMr24/2025-05-07-223517604-Photoroom.png',
+      ], 
+      art: 7401, 
+      category: "shoose",
+      price: 149,
+      size : "36-45", 
+      color: "Clear Sky",
+      brand: "adidas"
+    },
+    { id: 11, 
+      name: "Adidas Yeezy Boost 350",
+      image:[
+        'https://i.ibb.co/G4cmM2DH/2025-05-07-223807822-Photoroom.png',
+        'https://i.ibb.co/spR2MHS4/2025-05-07-224027957-Photoroom.png',
+        'https://i.ibb.co/Hp7cbMCc/2025-05-07-224121947-Photoroom.png',
+        'https://i.ibb.co/5WcW9142/2025-05-07-224209113-Photoroom.png',
+        'https://i.ibb.co/R4GBf9wc/2025-05-07-224457832-Photoroom.png',
+        'https://i.ibb.co/Z1zTwvNq/2025-05-07-224559865-Photoroom.png'
+      ], 
+      art: 7402, 
+      category: "shoose",
+      price: 155,
+      size : "36-45", 
+      color: "Static|Core Black Red|Zebra",
+      brand: "adidas"
+    },
+    { id: 12, 
+      name: "Adidas Yeezy Foam RNR",
+      image:[
+        'https://i.ibb.co/jPKPFD5T/2025-05-07-224933942-Photoroom.png',
+        'https://i.ibb.co/GvG5J7c5/2025-05-07-225139981-Photoroom.png',
+        'https://i.ibb.co/r29W3fSr/2025-05-07-225257573-Photoroom.png',
+        'https://i.ibb.co/rGLzS4b4/2025-05-07-225333981-Photoroom.png',
+        'https://i.ibb.co/ZpnB5tgf/2025-05-07-225442091-Photoroom.png',
+        'https://i.ibb.co/dsDqnTzp/2025-05-07-225559152-Photoroom.png'
+      ], 
+      art: 7410, 
+      category: "shoose",
+      price: 129,
+      size : "36-45", 
+      color: "Sand|Carbon|Sulfur",
+      brand: "adidas"
+    },
+    { id: 13, 
+      name: "adidas Yeezy Foam RNR MX",
+      image:[
+        'https://i.ibb.co/V0q7c59s/2025-05-07-230200206-Photoroom.png',
+        'https://i.ibb.co/0VDsd5BT/2025-05-07-230252933-Photoroom.png',
+      ], 
+      art: 7411, 
+      category: "shoose",
+      price: 135,
+      size : "36-51", 
+      color: "Carbon|Cream Clay|Sulfur",
+      brand: "adidas"
     },
   ]
 
@@ -576,6 +664,8 @@ const Catalog = () => {
                   <option className="brend__box-item" value="stussy">Stussy</option>
                   <option className="brend__box-item" value="evisu">Evisu</option>
                   <option className="brend__box-item" value="ralph-lauren">Ralph Lauren</option>
+                  <option className="brend__box-item" value="nb">New Balance</option>
+                  <option className="brend__box-item" value="adidas">Adidas</option>
               </select>
           </div>
         </div>
