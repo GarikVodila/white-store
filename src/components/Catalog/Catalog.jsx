@@ -395,6 +395,7 @@ const products = [
       color: "Desert Khaki Black",
       brand: "nike"
     },
+
     { id: 2, 
       name: "Nike AIR FORCE 1 MID",
       image:[
@@ -408,6 +409,7 @@ const products = [
       color: "White",
       brand: "nike"
     },
+
     { id: 3, 
       name: "Nike Dunk Low University",
       image:[
@@ -423,6 +425,7 @@ const products = [
       color: "red|blue",
       brand: "nike"
     },
+
     { id: 4, 
       name: "Grateful Dead SB Dunk Mid",
       image:[
@@ -435,11 +438,12 @@ const products = [
       ], 
       art: 2563, 
       category: "shoose",
-      price: 199,
+      price: 249,
       size : "36-45", 
       color: "Opti Yellow|Green Bear| Orange Bear",
       brand: "nike"
     },
+
     { id: 5, 
       name: "Nike SB Dunk Low Club 58 Gulf Racing Blue Chill",
       image:[
@@ -448,11 +452,12 @@ const products = [
       ], 
       art: 2564, 
       category: "shoose",
-      price: 189,
+      price: 229,
       size : "36-45", 
       color: "Racing Blue",
       brand: "nike"
     },
+
     { id: 6, 
       name: "Air Jordan 1 Mid",
       image:[
@@ -463,11 +468,12 @@ const products = [
       ], 
       art: 2565, 
       category: "shoose",
-      price: 189,
+      price: 199,
       size : "36-45", 
       color: "Game Royal Black White|Berry",
       brand: "nike"
     },
+
     { id: 7, 
       name: "Air Jordan 4 Retro",
       image:[
@@ -480,11 +486,12 @@ const products = [
       ], 
       art: 2567, 
       category: "shoose",
-      price: 209,
+      price: 279,
       size : "36-47", 
       color: "Vivid Sulfur|Red Cement|Smoke Grey",
       brand: "nike"
     },
+
     { id: 8, 
       name: "New Balance Sneakers Classics M1906AD",
       image:[
@@ -493,11 +500,12 @@ const products = [
       ], 
       art: 3801, 
       category: "shoose",
-      price: 169,
+      price: 179,
       size : "36-45", 
       color: "Silver Metallic",
       brand: "nb"
     },
+
     { id: 9, 
       name: "New Balance M1000",
       image:[
@@ -508,11 +516,12 @@ const products = [
       ], 
       art: 3802, 
       category: "shoose",
-      price: 219,
+      price: 249,
       size : "36-45", 
       color: "Purple|Blue",
       brand: "nb"
     },
+
     { id: 10, 
       name: "Adidas Gazelle Bold W",
       image:[
@@ -526,6 +535,7 @@ const products = [
       color: "Clear Sky",
       brand: "adidas"
     },
+
     { id: 11, 
       name: "Adidas Yeezy Boost 350",
       image:[
@@ -538,11 +548,12 @@ const products = [
       ], 
       art: 7402, 
       category: "shoose",
-      price: 155,
+      price: 159,
       size : "36-45", 
       color: "Static|Core Black Red|Zebra",
       brand: "adidas"
     },
+
     { id: 12, 
       name: "Adidas Yeezy Foam RNR",
       image:[
@@ -555,24 +566,288 @@ const products = [
       ], 
       art: 7410, 
       category: "shoose",
-      price: 129,
+      price: 130,
       size : "36-45", 
       color: "Sand|Carbon|Sulfur",
       brand: "adidas"
     },
+
     { id: 13, 
-      name: "adidas Yeezy Foam RNR MX",
+      name: "Adidas Yeezy Foam RNR MX",
       image:[
         'https://i.ibb.co/V0q7c59s/2025-05-07-230200206-Photoroom.png',
         'https://i.ibb.co/0VDsd5BT/2025-05-07-230252933-Photoroom.png',
+        'https://i.ibb.co/3DMDbYY/2025-05-08-135326161-Photoroom.png',
+        'https://i.ibb.co/k24fR3Yg/2025-05-08-135513809-Photoroom.png',
+        'https://i.ibb.co/qQj54sk/2025-05-08-135822870-Photoroom.png',
+        'https://i.ibb.co/vvzpMnrH/2025-05-08-135901571-Photoroom.png',
       ], 
       art: 7411, 
       category: "shoose",
-      price: 135,
+      price: 140,
       size : "36-51", 
-      color: "Carbon|Cream Clay|Sulfur",
+      color: "Carbon|Cream Clay|Moon Gray",
       brand: "adidas"
     },
+
+    { id: 14, 
+      name: "Adidas Yeezy Slide",
+      image:[
+        'https://i.ibb.co/jP2k55S3/2025-05-08-140150742-Photoroom.png',
+        'https://i.ibb.co/7mR7YSS/2025-05-08-234134145-Photoroom.png',
+        'https://i.ibb.co/h1CPf9q7/2025-05-08-234540558-Photoroom.png',
+        'https://i.ibb.co/fVsM9XCV/2025-05-08-234632319-Photoroom.png',
+        'https://i.ibb.co/Xk3S2y71/2025-05-08-234804396.png',
+        'https://i.ibb.co/v67BbCbV/2025-05-08-234852057.png'
+      ], 
+      art: 7412, 
+      category: "shoose",
+      price: 120,
+      size : "36-51", 
+      color: "Dark Onyx|Bone|Ochre",
+      brand: "adidas"
+    },
+
+    { id: 15, 
+      name: "Prado Swim Shorts",
+      image:[
+        'https://i.ibb.co/8L8rrqW2/2025-05-08-235445672-Photoroom.png',
+        'https://i.ibb.co/tMGBkmCb/2025-05-09-000403391-Photoroom.png',
+        'https://i.ibb.co/93VvB87T/2025-05-09-000445760-Photoroom.png',
+        'https://i.ibb.co/bjRzSGSy/2025-05-09-000520842-Photoroom.png'
+      ], 
+      art: 6401, 
+      category: "short",
+      price: 189,
+      size : "M-3XL", 
+      color: "White|Black|Red|Dark Blue",
+      brand: "pra"
+    },
+
+    { id: 16, 
+      name: "Polo Ralph Lauren Traveler Swim Trunk",
+      image:[
+        'https://i.ibb.co/YBTFzGzw/2025-05-09-001149148-Photoroom.png',
+        'https://i.ibb.co/TDCRF1Nq/2025-05-09-001228511-Photoroom.png',
+        'https://i.ibb.co/vCvQks8s/2025-05-09-001321300-Photoroom.png',
+        'https://i.ibb.co/wr7myWXQ/2025-05-09-001412420-Photoroom.png',
+        'https://i.ibb.co/v4DLSXz8/2025-05-09-001509927-Photoroom.png',
+        'https://i.ibb.co/hJC91JB0/2025-05-09-001602275-Photoroom.png',
+        'https://i.ibb.co/9kZmty1Q/2025-05-09-001642469-Photoroom.png',
+        'https://i.ibb.co/Fk6TMwNL/2025-05-09-001726772-Photoroom.png',
+        'https://i.ibb.co/39gLN2fv/2025-05-09-001810033-Photoroom.png',
+        'https://i.ibb.co/LhrJMZcn/2025-05-09-001856715-Photoroom.png',
+        'https://i.ibb.co/vCj4Kw1r/2025-05-09-001946556-Photoroom.png',
+        'https://i.ibb.co/8D3qnFcZ/2025-05-09-002031608-Photoroom.png',
+      ], 
+      art: 1101, 
+      category: "short",
+      price: 139,
+      size : "S-XL", 
+      color: "Black|Purple|Pink|Dark Blue|Khaki|Sky Blue",
+      brand: "ralph-lauren"
+    },
+    { id: 17, 
+      name: "Louis Vuitton Shorts Midas Touch Luxury",
+      image:[
+        'https://i.ibb.co/fYFyJ18V/2025-05-09-002536288-Photoroom.png',
+        'https://i.ibb.co/4ZTpTJVp/2025-05-09-002636169-Photoroom.png',
+      ], 
+      art: 1701, 
+      category: "short",
+      price: 230,
+      size : "M-3XL", 
+      color: "Black",
+      brand: "lv"
+    },
+
+    { id: 18, 
+      name: "CP Company Metropolis Jogger Shorts",
+      image:[
+        'https://i.ibb.co/bjG3Vb22/2025-05-09-003346792-Photoroom.png',
+        'https://i.ibb.co/LdfZjJDj/2025-05-09-003519812-Photoroom.png',
+        'https://i.ibb.co/RkJPSpfJ/2025-05-09-003617761-Photoroom.png'
+      ], 
+      art: 1701, 
+      category: "short",
+      price: 220,
+      size : "M-XXL", 
+      color: "Grey|Black|Brown",
+      brand: "cp"
+    },
+
+    { id: 19, 
+      name: "CP Company Metropolis Jogger Shorts",
+      image:[
+        'https://i.ibb.co/fPD9MhG/2025-05-09-004046509-Photoroom.png',
+        'https://i.ibb.co/M5PSCKMb/2025-05-09-004153099-Photoroom.png',
+        'https://i.ibb.co/YFHjF7MY/2025-05-09-004241001-Photoroom.png',
+        'https://i.ibb.co/VWjswNQG/2025-05-09-004350853-Photoroom.png'
+      ], 
+      art: 1702, 
+      category: "short",
+      price: 240,
+      size : "M-XXL", 
+      color: "Metal Silver|Black|Brown|Orange",
+      brand: "cp"
+    },
+
+    { id: 20, 
+      name: "Ami Paris Shorts",
+      image:[
+        'https://i.ibb.co/SwPx0894/2025-05-09-005001559-Photoroom.png',
+        'https://i.ibb.co/whfxt4ZJ/2025-05-09-095532570-Photoroom.png',
+        'https://i.ibb.co/x8C2DnhN/2025-05-09-095639296-Photoroom.png',
+        'https://i.ibb.co/zVCSXLgW/2025-05-09-005053085-Photoroom.png',
+        'https://i.ibb.co/CK3Pc4Ys/2025-05-09-005144339-Photoroom.png',
+        'https://i.ibb.co/JRhLt76t/2025-05-09-095757041-Photoroom.png'
+      ], 
+      art: 1702, 
+      category: "short",
+      price: 150,
+      size : "S-XL", 
+      color: "White|Black|Grey|Cream|Light Green|Purple",
+      brand: "ami"
+    },
+
+    { id: 21, 
+      name: "Palm Angels Swim Shorts",
+      image:[
+        'https://i.ibb.co/JWmM4cq0/2025-05-09-100801488-Photoroom.png',
+        'https://i.ibb.co/237Tq2ZB/2025-05-09-100902649-Photoroom.png',
+        'https://i.ibb.co/xtvPXygb/2025-05-09-101008824-Photoroom.png',
+        'https://i.ibb.co/Vc5V3bgj/2025-05-09-101104959-Photoroom.png',
+        'https://i.ibb.co/1JnrLSVV/2025-05-09-101156112-Photoroom.png',
+        'https://i.ibb.co/kgyRwtjS/2025-05-09-101300793-Photoroom.png',
+        'https://i.ibb.co/7JXSN3Qs/2025-05-09-101432144-Photoroom.png'
+      ], 
+      art: 2201, 
+      category: "short",
+      price: 160,
+      size : "S-XL", 
+      color: "Black|Red|Yellow|Light Green|Green|Purple|Blue",
+      brand: "pa"
+    },
+
+    { id: 27, 
+      name: "Palm Angels Classic Shorts",
+      image:[
+        'https://i.ibb.co/F4Dx6mjW/2025-05-09-135921599-Photoroom.png',
+        'https://i.ibb.co/HTb7xHw2/2025-05-09-140034779-Photoroom.png',
+        'https://i.ibb.co/jPF0q68r/2025-05-09-140114576-Photoroom.png',
+        'https://i.ibb.co/3y8WGbXR/2025-05-09-140157101-Photoroom.png',
+        'https://i.ibb.co/DP0PrSL5/2025-05-09-140242681-Photoroom.png',
+        'https://i.ibb.co/WN8bn4tr/2025-05-09-140317027-Photoroom.png'
+      ], 
+      art: 2202, 
+      category: "short",
+      price: 150,
+      size : "S-XL", 
+      color: "Green|Red|Puple",
+      brand: "pa"
+    },
+
+    { id: 22, 
+      name: "Denim Tears Shoert",
+      image:[
+        'https://i.ibb.co/Rn4r3V0/2025-05-09-102239404-Photoroom.png',
+        'https://i.ibb.co/JR7j0yRH/2025-05-09-102334879-Photoroom.png',
+        'https://i.ibb.co/Nvm3G5q/2025-05-09-102425781-Photoroom.png',
+        'https://i.ibb.co/W4HNm8mG/2025-05-09-102523827-Photoroom.png',
+        'https://i.ibb.co/tT5GfBWF/2025-05-09-102637582-Photoroom.png',
+        'https://i.ibb.co/v6VB5dbX/2025-05-09-102736987-Photoroom.png',
+      ], 
+      art: 2101, 
+      category: "short",
+      price: 139,
+      size : "S-XL", 
+      color: "Grey|Red|Green|Dark Grey|Dark Blue|Black",
+      brand: "denim"
+    },
+
+    { id: 23, 
+      name: "Denim Tears Jeans Shorts Star Jorts Vintage Baggy",
+      image:[
+        'https://i.ibb.co/dJ6tnk6m/2025-05-09-103649228-Photoroom.png',
+        'https://i.ibb.co/0y2ytZ4z/2025-05-09-103743086-Photoroom.png',
+        'https://i.ibb.co/qVnnjSN/2025-05-09-103844321-Photoroom.png',
+        'https://i.ibb.co/xqgmKyVW/2025-05-09-103926974-Photoroom.png',
+        'https://i.ibb.co/1tqnnfhZ/2025-05-09-104113605-Photoroom.png',
+        'https://i.ibb.co/xKCS9685/2025-05-09-104220841-Photoroom.png',
+      ], 
+      art: 1401, 
+      category: "short",
+      price: 150,
+      size : "S-XL", 
+      color: "Blue|Black|Cream",
+      brand: "denim"
+    },
+
+    { id: 24, 
+      name: "Stone Island Bermuda Short",
+      image:[
+        'https://i.ibb.co/rRG4v1r4/2025-05-09-104904459-Photoroom.png',
+        'https://i.ibb.co/GQmYtf4X/2025-05-09-105057014-Photoroom.png',
+        'https://i.ibb.co/FbT0CzCg/2025-05-09-105139525-Photoroom.png',
+        'https://i.ibb.co/zTjTmtKx/2025-05-09-105238647-Photoroom.png',
+      ], 
+      art: 1401, 
+      category: "short",
+      price: 240,
+      size : "S-XL", 
+      color: "Silver|Khaki|Black|Yellow",
+      brand: "stone-island"
+    },
+
+    { id: 25, 
+      name: "Nike Tech Fleece Short",
+      image:[
+        'https://i.ibb.co/hxftGswL/2025-05-09-131440862-Photoroom.png',
+        'https://i.ibb.co/1fwhGQMF/2025-05-09-131621334-Photoroom.png',
+        'https://i.ibb.co/0RMPPJGR/2025-05-09-131719830-Photoroom.png',
+        'https://i.ibb.co/39xdkYtN/2025-05-09-131806316-Photoroom.png',
+        'https://i.ibb.co/d4CVrvPz/2025-05-09-131847204-Photoroom.png',
+        'https://i.ibb.co/Qv3bqTXw/2025-05-09-132005859-Photoroom.png',
+        'https://i.ibb.co/0VZnK7mv/2025-05-09-132059246-Photoroom.png',
+        'https://i.ibb.co/Nd9pQXYV/2025-05-09-132201442-Photoroom.png'
+      ], 
+      art: 2582, 
+      category: "short",
+      price: 170,
+      size : "M-XXL", 
+      color: "Black|White|Cream|Grey|Dark Grey|Brown",
+      brand: "Nike"
+    },
+
+    { id: 26, 
+      name: "Carhartt WIP Drawstring Cotton-Blend Shorts",
+      image:[
+        'https://i.ibb.co/HLkd9dW7/2025-05-09-132556202-Photoroom.png',
+        'https://i.ibb.co/JjRJyxkD/2025-05-09-132646483-Photoroom.png',
+        'https://i.ibb.co/5X4q6Bss/2025-05-09-132729302-Photoroom.png',
+        'https://i.ibb.co/B0QhC12/2025-05-09-132848468-Photoroom.png',
+      ], 
+      art: 3801, 
+      category: "short",
+      price: 150,
+      size : "S-XL", 
+      color: "White|Light Brown|Dark Brown|Black",
+      brand: "Nike"
+    },
+
+    // { id: 28, 
+    //   name: "Palm Angels",
+    //   image:[
+    //     'https://i.ibb.co/LzjkjfhC/2025-05-09-140707622-Photoroom.png',
+    //     'https://i.ibb.co/fVDfTShX/2025-05-09-140902952-Photoroom.png'
+    //   ], 
+    //   art: 3801, 
+    //   category: "Tshirt",
+    //   price: 150,
+    //   size : "S-XL", 
+    //   color: "Black",
+    //   brand: "Nike"
+    // },
   ]
 
 
@@ -626,11 +901,10 @@ const Catalog = () => {
               onChange={(e) => setCategory(e.target.value)}
               >
                   <option className="brend__type-item" value="all">Все</option>
-                  <option className="brend__type-item" value="jacket">Куртки</option>
                   <option className="brend__type-item" value="hoodie">Худи</option>
-                  <option className="brend__type-item" value="sweater">Свитер</option>
-                  <option className="brend__type-item" value="sport-suit">Спортивный костюм</option>
                   <option className="brend__type-item" value="Tshirt">Футболка</option>
+                  <option className="brend__type-item" value="sport-suit">Спортивный костюм</option>
+                  <option className="brend__type-item" value="short">Шорты</option>
                   <option className="brend__type-item" value="shoose">Кросовки</option>
               </select>
           </div>
@@ -656,16 +930,18 @@ const Catalog = () => {
                   onChange={(e) => setBrand(e.target.value)}
                   >
                   <option className="brend__box-item" value="all">Все</option>
+                  <option className="brend__box-item" value="adidas">Adidas</option>
+                  <option className="brend__box-item" value="ami">Ami Paris</option>
                   <option className="brend__box-item" value="bape">Bape</option>
+                  <option className="brend__box-item" value="cp">CP Company</option>
+                  <option className="brend__box-item" value="denim">Denim Tears</option>
                   <option className="brend__box-item" value="stone-island">Stone Island</option>
                   <option className="brend__box-item" value="lv">LOUIS VUITTON</option>
-                  <option className="brend__box-item" value="moncler">Moncler</option>
+                  <option className="brend__box-item" value="pa">Palm Angels</option>
                   <option className="brend__box-item" value="nike">Nike</option>
                   <option className="brend__box-item" value="stussy">Stussy</option>
-                  <option className="brend__box-item" value="evisu">Evisu</option>
                   <option className="brend__box-item" value="ralph-lauren">Ralph Lauren</option>
                   <option className="brend__box-item" value="nb">New Balance</option>
-                  <option className="brend__box-item" value="adidas">Adidas</option>
               </select>
           </div>
         </div>
