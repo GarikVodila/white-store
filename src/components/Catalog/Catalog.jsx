@@ -6,382 +6,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
-// Пример данных
-// const products = [
-//   { id: 1, 
-//     name: "Nike Air Force 1 Low '07 LV8", 
-//     img:'https://i.ibb.co/fz9J0LRT/acetone-202557-14312-993-1.png',
-//     art: 2560, 
-//     category: "shoose", 
-//     price: 179, 
-//     size : "39-45",
-//     color: "Desert Khaki Black",
-//     brand: "nike"
-//   },
-
-//   { id: 2, 
-//     name: "Nike AIR FORCE 1 MID",
-//     img:'https://i.ibb.co/HTNKYQP0/acetone-202557-145548-640-1.png', 
-//     art: 2561, 
-//     category: "shoose",
-//     price: 179,
-//     size : "36-45", 
-//     color: "white",
-//     brand: "nike"
-//   },
-
-//   { id: 3, 
-//     name: "Bape Camo Shark",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FXrkeE99BEPyXnnftVZZr%2Fasset.png?alt=media&token=11b753be-f91d-46b9-b96c-14e33f91a706",
-//     art: 8731,
-//     color: "pink", 
-//     size: "m-xl", 
-//     category: "hoodie", 
-//     price: 400 ,
-//     brand: "bape"
-//   },
-
-//   { id: 4, 
-//     name: "Bape Camo Shark",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FhT17cITeCq8PJtQi3AuB%2Fasset.png?alt=media&token=7e44d2a2-73ca-4001-bc77-14eeef808e3f",
-//     "art": 8732,
-//     "color": "red", 
-//     "size" : "m-xl", 
-//     category: "hoodie", 
-//     price: 400 ,
-//     brand: "bape"
-//   },
-
-//   { id: 5, 
-//     name: "Bape Camo Shark",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FWTImiNcYiwG4k61QYstD%2Fasset.png?alt=media&token=0ed239b9-f4e1-459d-ba1c-81f199fb150f",
-//     "art": 8733,
-//     "color": "grey", 
-//     "size" : "m-xl", 
-//     category: "hoodie", 
-//     price: 400  ,
-//     brand: "bape"
-//   },
-
-//   { id: 6, 
-//     name: "Bape Camo Shark",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F3QhM5re61V2BE3rG3Ryt%2Fasset.png?alt=media&token=01463984-3e72-471f-bf5f-bb5df9ba0fdf",
-//     "art": 8734,
-//     "color": "blue", 
-//     "size" : "m-xl", 
-//     category: "hoodie", 
-//     price: 400  ,
-//     brand: "bape"
-//   },
-
-//   { id: 7, 
-//     name: "Bape Camo Shark",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F8JkeB8vuZ6NUl5sjWOyH%2Fasset.png?alt=media&token=c9f41a8c-7f83-46c6-bfe8-855b8ca03c1b",
-//     "art": 8736,
-//     "color": "purple", 
-//     "size" : "m-xl", 
-//     category: "hoodie", 
-//     price: 400  ,
-//     brand: "bape"
-//   },
-
-//   { id: 8, 
-//     name: "Nike Tech Fleece",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FOza0JzRvRExI3zmRc1zT%2Fasset.png?alt=media&token=c81d943f-d0c6-44e1-8c19-624cd94c1499",
-//     "art": 1322,
-//     "color": "grey", 
-//     "size" : "m-xl", 
-//     category: "sport-suit", 
-//     price: 299  ,
-//     brand: "nike"
-//   },
-
-//   { id: 9, 
-//     name: "Nike Tech Fleece",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FLDyjTPqPjpt8N4mg1QBs%2Fasset.png?alt=media&token=adbeadae-8876-4f39-b02b-6c192e8b1e48",
-//     "art": 1323,
-//     "color": "white", 
-//     "size" : "m-xl", 
-//     category: "sport-suit", 
-//     price: 299 ,
-//     brand: "nike"
-//   },
-
-//   { id: 10, 
-//     name: "Nike Tech Fleece",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FycIjMOQGJJqKhdNm8PMD%2Fasset.png?alt=media&token=9cb4fc3a-888b-4459-bf8a-94facf98d13b",
-//     "art": 1324,
-//     "color": "black", 
-//     "size" : "m-xl", 
-//     category: "sport-suit", 
-//     price: 299 ,
-//     brand: "nike"
-//   },
-
-//   { id: 11, 
-//     name: "Nike Tech Fleece",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FwRjgdfz5DLLt4u3ndpoj%2Fasset.png?alt=media&token=72c668ae-61e1-4222-9665-30071c6ee2f4",
-//     "art": 1325,
-//     "color": "red", 
-//     "size" : "m-xl", 
-//     category: "sport-suit", 
-//     price: 299 ,
-//     brand: "nike"
-//   },
-
-//   { id: 12, 
-//     name: "Sweater Lv Maison Ringo",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FZjCdoo0Iref04UAJu9fP%2Fasset.png?alt=media&token=7a7c9c34-f446-4cbe-a035-77c18f27d502",
-//     "art": 1874,
-//     "color": "black", 
-//     "size" : "m-xl", 
-//     category: "sweater", 
-//     price: 420 ,
-//     brand: "lv"
-//   },
-
-//   { id: 13, 
-//     name: "T-shirt Balenciaga Sport Type",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F1WnCCLwVmz3UWyteQRLz%2Fasset.png?alt=media&token=0fff71a6-0c2e-4160-8a4f-8ab8659eaf01",
-//     "art": 1952,
-//     "color": "black", 
-//     "size" : "xs-l", 
-//     category: "Tshirt", 
-//     price: 270 ,
-//     brand: "balenciaga"
-//   },
-
-//   { id: 14, 
-//     name: "Stussy Skull T-shirt",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2Fn8zgFfL5WKH89CTz7bX6%2Fasset.png?alt=media&token=ee4497aa-2114-45ed-9853-0e41299bbdd8",
-//     "art": 4502,
-//     "color": "white", 
-//     "size" : "s-xl", 
-//     category: "Tshirt", 
-//     price: 160 ,
-//     brand: "stussy"
-//   },
-
-//   { id: 15, 
-//     name: "Stussy & Born X Raised 8 Ball Tee T-shirt",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2F84klr5HnVAsu2Cl5OPA3%2Fasset.png?alt=media&token=ff5f65d4-4f9e-4c84-9ee8-bfa4bf7c7c47",
-//     "art": 4503,
-//     "color": "white", 
-//     "size" : "s-xl", 
-//     category: "Tshirt", 
-//     price: 160 ,
-//     brand: "stussy"
-//   },
-
-//   { id: 16, 
-//     name: "Stussy USA Pig T-shirt",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FvN935CA2UyyiZsfnoPiH%2Fasset.png?alt=media&token=beaeb72f-9087-4e4a-9d94-a140802b81ef",
-//     "art": 4504,
-//     "color": "white", 
-//     "size" : "s-xl", 
-//     category: "Tshirt", 
-//     price: 120 ,
-//     brand: "stussy"
-//   },
-
-//   { id: 17, 
-//     name: "Stussy Pufer Jacket",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FWrkvaqav22KpnVs4yxXb%2Fasset.png?alt=media&token=de76c12e-2522-4bc9-91de-cddff88694c5",
-//     "art": 4525,
-//     "color": "black", 
-//     "size" : "xs-l", 
-//     category: "jacket", 
-//     price: 260,
-//     brand: "stussy"
-//   },
-
-//   { id: 18, 
-//     name: "Stone Island Longslev",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FfXZ6Kq0ruJ5q46M6Egfd%2Fasset.png?alt=media&token=38c79750-2e92-4a38-90f0-eb5fde17f154",
-//     "art": 8403,
-//     "color": "black", 
-//     "size" : "s-xl", 
-//     category: "sweater", 
-//     price: 430,
-//     brand: "stone-island"
-//   },
-
-//   { id: 19, 
-//     name: "Stone Island Longslev",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FKn8IQt0Lz4yYDhLU175w%2Fasset.png?alt=media&token=7cc36543-9c5a-4246-9d9a-02957620158c",
-//     "art": 8404,
-//     "color": "white", 
-//     "size" : "s-xl", 
-//     category: "sweater", 
-//     price: 430,
-//     brand: "stone-island"
-//   },
-
-//   { id: 20, 
-//     name: "LV Premium T-shirt",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2Fv9pP53ZKWjIurlwIMLkE%2Fasset.png?alt=media&token=07dab079-a48f-41b6-be7e-82fe6afff80a",
-//     "art": 1915,
-//     "color": "black", 
-//     "size" : "s-xl", 
-//     category: "Tshirt", 
-//     price: 299,
-//     brand: "lv"
-//   },
-
-//   { id: 21, 
-//     name: "Stone Island Vest",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FG4aI2t2HeNEKzHzArdH4%2Fasset.png?alt=media&token=36e82382-464e-48fe-a306-16310c9ef052",
-//     "art": 8401,
-//     "color": "black|white", 
-//     "size" : "m-xl", 
-//     category: "jacket", 
-//     price: 399,
-//     brand: "stone-island"
-//   },
-
-//   { id: 22, 
-//     name: "Stone Island Jacket",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FX3krxcNjeHOuT4Mt4q0p%2Fasset.png?alt=media&token=1ab9a823-7366-4c4f-aecc-0073e9b82e1b",
-//     "art": 8402,
-//     "color": "black", 
-//     "size" : "m-xl", 
-//     category: "jacket", 
-//     price: 420,
-//     brand: "stone-island"
-//   },
-
-//   { id: 23, 
-//     name: "Stone Island Jacket Classic Luxury ",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FBaO0qAeQCQTNF6V5k0dJ%2Fasset.png?alt=media&token=acf944be-c0ba-41b3-9582-ffbea6be4977",
-//     "art": 8405,
-//     "color": "grey|blue", 
-//     "size" : "m-xl", 
-//     category: "jacket", 
-//     price: 499,
-//     brand: "stone-island"
-//   },
-//   { id: 24, 
-//     name: "Stussy Zip Hoodie",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FPbEdEgjFr84NTjW0WWiY%2Fasset.png?alt=media&token=3a81db0e-4093-4329-aa7b-03307b04140c",
-//     "art": 4512,
-//     "color": "black", 
-//     "size" : "s-xl", 
-//     category: "hoodie", 
-//     price: 250,
-//     brand: "stussy",
-//   },
-//   { id: 25, 
-//     name: "Nike X Nocta",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FgGF4NT9NbU5rmZBqjkL3%2Fasset.png?alt=media&token=e10ac2ee-fefe-4d4b-a2e0-43b1aa0aec25",
-//     "art": 1355,
-//     "color": "black", 
-//     "size" : "m-xl", 
-//     category: "hoodie", 
-//     price: 270,
-//     brand: "nike"
-//   },
-//   { id: 26, 
-//     name: "Nike X Nocta",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FK8RrPK1k5Bbzs44fmfR7%2Fasset.png?alt=media&token=d8425a54-35b2-47ee-a363-cc2cf8ebd8b0",
-//     "art": 1356,
-//     "color": "green", 
-//     "size" : "m-xl", 
-//     category: "hoodie", 
-//     price: 270,
-//     brand: "nike"
-//   },
-//   { id: 27, 
-//     name: "Nike X Nocta",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FXONxtREmKUSDUvtaZYUv%2Fasset.png?alt=media&token=ae417d5c-edd0-449f-88df-5de896b3ef9c",
-//     "art": 1357,
-//     "color": "skyblue", 
-//     "size" : "m-xl", 
-//     category: "hoodie", 
-//     price: 270,
-//     brand: "nike"
-//   },
-//   { id: 28, 
-//     name: "Louis Vuitton Sweater",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FidsOmwcobV4uT7JLDOJp%2Fasset.png?alt=media&token=e4105110-4d88-4d69-b2b1-5d35e45f83df",
-//     "art": 1867,
-//     "color": "black", 
-//     "size" : "s-l", 
-//     category: "sweater", 
-//     price: 450,
-//     brand: "lv"
-//   },
-//   { id: 29, 
-//     name: "Louis Vuitton Sweater",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FF33nTTbncw8Mka5iXJvr%2Fasset.png?alt=media&token=0bc43e57-9e01-4ae4-93c5-40598a699ad2",
-//     "art": 1868,
-//     "color": "red", 
-//     "size" : "s-l", 
-//     category: "sweater", 
-//     price: 450,
-//     brand: "lv"
-//   },
-//   { id: 30, 
-//     name: "Louis Vuitton Sweater",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FCAWsgPOtkkCG4DDGhiZe%2Fasset.png?alt=media&token=c5541055-1d18-4806-b7fe-10f0685955b9",
-//     "art": 1869,
-//     "color": "blue", 
-//     "size" : "s-l", 
-//     category: "sweater", 
-//     price: 450,
-//     brand: "lv"
-//   },
-//   { id: 31, 
-//     name: "Evisu Boomder",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FW6oBiaPAqchDnlryJi5r%2Fasset.png?alt=media&token=db545b67-fa32-4678-a179-a53f2b1d387f",
-//     "art": 3175,
-//     "color": "blue", 
-//     "size" : "s-xl", 
-//     category: "jacket", 
-//     price: 450,
-//     brand: "evisu"
-//   },
-//   { id: 32, 
-//     name: "Ralph Lauren Sweater",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FjeYPDXpORHgJqXhZW7zy%2Fasset.png?alt=media&token=25bbc31a-050d-4f61-8aa0-a579c988716c",
-//     "art": 1415,
-//     "color": "cream", 
-//     "size" : "s-xl", 
-//     category: "sweater", 
-//     price: 149,
-//     brand: "ralph-lauren"
-//   },
-//   { id: 33, 
-//     name: "Ralph Lauren Sweater",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FLOgHJUBlfhBayOAJBhSd%2Fasset.png?alt=media&token=c004c460-4457-45fa-ae62-93460abd2564",
-//     "art": 1415,
-//     "color": "black", 
-//     "size" : "s-xl", 
-//     category: "sweater", 
-//     price: 149,
-//     brand: "ralph-lauren"
-//   },
-//   { id: 34, 
-//     name: "Ralph Lauren Sweater",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FSTXXRAnSfjz8tG7zIniT%2Fasset.png?alt=media&token=c89106f2-0c2f-4f9f-8426-7c594e344673",
-//     "art": 1425,
-//     "color": "cream", 
-//     "size" : "s-xl", 
-//     category: "jacket", 
-//     price: 280,
-//     brand: "ralph-lauren"
-//   },
-//   { id: 35, 
-//     name: "Ralph Lauren Sweater",
-//     img: "https://firebasestorage.googleapis.com/v0/b/flair-ai.appspot.com/o/assetsV2%2FQPx3i9UIvbzLsy8WIjzW%2Fasset.png?alt=media&token=5b0ab81d-91cd-4ec2-ab84-15ecf897c574",
-//     "art": 1426,
-//     "color": "coffee", 
-//     "size" : "s-xl", 
-//     category: "jacket", 
-//     price: 280,
-//     brand: "ralph-lauren"
-//   },
-// ];
-
 const products = [
     { id: 1, 
       name: "Nike Air Force 1 Low '07 LV8", 
@@ -609,7 +233,7 @@ const products = [
     },
 
     { id: 15, 
-      name: "Prado Swim Shorts",
+      name: "Prada Swim Shorts",
       image:[
         'https://i.ibb.co/8L8rrqW2/2025-05-08-235445672-Photoroom.png',
         'https://i.ibb.co/tMGBkmCb/2025-05-09-000403391-Photoroom.png',
@@ -702,7 +326,7 @@ const products = [
         'https://i.ibb.co/CK3Pc4Ys/2025-05-09-005144339-Photoroom.png',
         'https://i.ibb.co/JRhLt76t/2025-05-09-095757041-Photoroom.png'
       ], 
-      art: 1702, 
+      art: 3901, 
       category: "short",
       price: 150,
       size : "S-XL", 
@@ -815,12 +439,12 @@ const products = [
       category: "short",
       price: 170,
       size : "M-XXL", 
-      color: "Black|White|Cream|Grey|Dark Grey|Brown",
-      brand: "Nike"
+      color: "Black|White|Cream|Grey|Dark Grey|Brown|Red",
+      brand: "nike"
     },
 
     { id: 26, 
-      name: "Carhartt WIP Drawstring Cotton-Blend Shorts",
+      name: "Carhartt x WIP Drawstring Cotton-Blend Shorts",
       image:[
         'https://i.ibb.co/HLkd9dW7/2025-05-09-132556202-Photoroom.png',
         'https://i.ibb.co/JjRJyxkD/2025-05-09-132646483-Photoroom.png',
@@ -832,28 +456,513 @@ const products = [
       price: 150,
       size : "S-XL", 
       color: "White|Light Brown|Dark Brown|Black",
-      brand: "Nike"
+      brand: "carhart"
     },
 
-    // { id: 28, 
-    //   name: "Palm Angels",
-    //   image:[
-    //     'https://i.ibb.co/LzjkjfhC/2025-05-09-140707622-Photoroom.png',
-    //     'https://i.ibb.co/fVDfTShX/2025-05-09-140902952-Photoroom.png'
-    //   ], 
-    //   art: 3801, 
-    //   category: "Tshirt",
-    //   price: 150,
-    //   size : "S-XL", 
-    //   color: "Black",
-    //   brand: "Nike"
-    // },
+    { id: 28, 
+      name: "Palm Angels Shark Classic T-shirt",
+      image:[
+        'https://i.ibb.co/LzjkjfhC/2025-05-09-140707622-Photoroom.png',
+        'https://i.ibb.co/fVDfTShX/2025-05-09-140902952-Photoroom.png'
+      ], 
+      art: 2231, 
+      category: "Tshirt",
+      price: 140,
+      size : "S-XL", 
+      color: "Black",
+      brand: "pa"
+    },
+
+    { id: 36, 
+      name: "Palm Angels Statement Pencil",
+      image:[
+        'https://i.ibb.co/gZtF91p0/2025-05-15-234655571-Photoroom.png',
+      ], 
+      art: 2232, 
+      category: "Tshirt",
+      price: 140,
+      size : "S-XL", 
+      color: "Black",
+      brand: "pa"
+    },
+
+    { id: 37, 
+      name: "Palm Angels Dragon Lunar New Year Tee",
+      image:[
+        'https://i.ibb.co/1GxFDY33/2025-05-15-235439318-Photoroom.png',
+      ], 
+      art: 2233, 
+      category: "Tshirt",
+      price: 140,
+      size : "S-XL", 
+      color: "White",
+      brand: "pa"
+    },
+
+    { id: 29, 
+      name: "Sp5der Purple - Etsy",
+      image:[
+        'https://i.ibb.co/S9yf7wy/2025-05-12-134008588-Photoroom.png',
+      ], 
+      art: 2901, 
+      category: "Tshirt",
+      price: 130,
+      size : "S-XL", 
+      color: "Black",
+      brand: "spider"
+    },
+
+    { id: 30, 
+      name: "Sp5der Pink!",
+      image:[
+        'https://i.ibb.co/LXYvZ7Jy/2025-05-12-134331180-Photoroom.png',
+      ], 
+      art: 2901, 
+      category: "Tshirt",
+      price: 130,
+      size : "S-XL", 
+      color: "Black",
+      brand: "spider"
+    },
+
+    { id: 31, 
+      name: "BAPE Hologram Busy Works Tee",
+      image:[
+        'https://i.ibb.co/nqtbjMqC/2025-05-12-182612866-Photoroom.png',
+        'https://i.ibb.co/NgxtsN1Y/2025-05-12-182834318-Photoroom.png'
+      ], 
+      art: 3101, 
+      category: "Tshirt",
+      price: 160,
+      size : "S-XL", 
+      color: "Black|White",
+      brand: "bape"
+    },
+
+    { id: 38, 
+      name: "Burberry Letchford Logo T-Shirt",
+      image:[
+        'https://i.ibb.co/1Gcc4McJ/2025-05-15-235859787.png',
+      ], 
+      art: 8701, 
+      category: "Tshirt",
+      price: 200,
+      size : "XS-L", 
+      color: "Black",
+      brand: "burberry"
+    },
+
+    { id: 32, 
+      name: "Burberry Daisy-logo Cotton T-shirt",
+      image:[
+        'https://i.ibb.co/TDZjQ6B5/2025-05-12-183130289-Photoroom.png',
+        'https://i.ibb.co/8LHy4F9C/2025-05-12-183202463-Photoroom.png'
+      ], 
+      art: 8702, 
+      category: "Tshirt",
+      price: 220,
+      size : "S-XXL", 
+      color: "Black|White",
+      brand: "burberry"
+    },
+
+    { id: 39, 
+      name: "EKD Burberry T-shirt",
+      image:[
+        'https://i.ibb.co/604wGKC1/2025-05-16-001146156-Photoroom.png',
+        'https://i.ibb.co/bgDWqfZx/2025-05-16-001105300-Photoroom.png',
+        'https://i.ibb.co/jkrHytM7/2025-05-16-001418921-Photoroom.png'
+      ], 
+      art: 8703, 
+      category: "Tshirt",
+      price: 220,
+      size : "S-XL", 
+      color: "Black|White|Persian",
+      brand: "burberry"
+    },
+
+    { id: 33, 
+      name: "The North Face Spring and Summer New Neutral Short-Sleeve T-Shirt",
+      image:[
+        'https://i.ibb.co/vx1sGHCw/2025-05-12-184054272-Photoroom.png',
+        'https://i.ibb.co/dw9MsC3B/2025-05-12-183424606-Photoroom.png',
+        'https://i.ibb.co/JRTHFhj6/2025-05-12-184214138-Photoroom.png',
+        'https://i.ibb.co/MDByRmFj/2025-05-12-184139432-Photoroom.png',
+        'https://i.ibb.co/KcCy1rhg/2025-05-12-184334222-Photoroom.png',
+        'https://i.ibb.co/KxjXt3VW/2025-05-12-184258734-Photoroom.png'
+      ], 
+      art: 7701, 
+      category: "Tshirt",
+      price: 160,
+      size : "L-4XL", 
+      color: "Black|White|Grey",
+      brand: "tnf"
+    },
+
+    { id: 34, 
+      name: "The North Face Never Stop Explorer T-Shirt",
+      image:[
+        'https://i.ibb.co/qSftD7f/2025-05-12-184822688-Photoroom.png',
+        'https://i.ibb.co/Nnn1gQnc/2025-05-12-184739072-Photoroom.png',
+        'https://i.ibb.co/bMjtrzJ0/2025-05-12-185114560-Photoroom.png',
+        'https://i.ibb.co/Psg0p4L4/2025-05-12-185159949-Photoroom.png',
+        'https://i.ibb.co/zWXhbmrZ/2025-05-12-185233188-Photoroom.png',
+        'https://i.ibb.co/mC7p5Xvz/2025-05-12-185308560-Photoroom.png'
+      ], 
+      art: 7702, 
+      category: "Tshirt",
+      price: 160,
+      size : "L-4XL", 
+      color: "Black|White|Grey",
+      brand: "tnf"
+    },
+
+    { id: 35, 
+      name: "The North Face Never Stop Explorer II T-Shirt",
+      image:[
+        'https://i.ibb.co/mrJXn2yJ/2025-05-15-234226317-Photoroom.png',
+        'https://i.ibb.co/N2ppPyqD/2025-05-15-234307181-Photoroom.png',
+        'https://i.ibb.co/39L5mzFS/2025-05-15-234341894-Photoroom.png',
+      ], 
+      art: 7703, 
+      category: "Tshirt",
+      price: 150,
+      size : "L-4XL", 
+      color: "Black|White|Grey",
+      brand: "tnf"
+    },
+
+    { id: 40, 
+      name: "Adidas Adicolor Classics 3-Stripes Tee",
+      image:[
+        'https://i.ibb.co/VWTvtQt7/2025-05-16-001945963-Photoroom.png',
+        'https://i.ibb.co/G3C0dj5k/2025-05-16-002046011-Photoroom.png',
+        'https://i.ibb.co/0R0PTzbL/2025-05-16-002131347-Photoroom.png',
+        'https://i.ibb.co/ZpQrvYL3/2025-05-16-002203974-Photoroom.png'
+      ], 
+      art: 7471, 
+      category: "Tshirt",
+      price: 110,
+      size : "M-4XL", 
+      color: "Black|White|Light Brown|Dark Brown",
+      brand: "adidas"
+    },
+
+    { id: 41, 
+      name: "HUGO BOSS Logo T-shirt",
+      image:[
+        'https://i.ibb.co/BH6hyB3F/2025-05-16-004000516-Photoroom.png',
+        'https://i.ibb.co/pr1ZygwL/2025-05-16-004109207-Photoroom.png',
+        'https://i.ibb.co/d4mLtrRy/2025-05-16-004145855-Photoroom.png',
+        'https://i.ibb.co/tw5Fpd4m/2025-05-16-004407044-Photoroom.png'
+      ], 
+      art: 9001, 
+      category: "Tshirt",
+      price: 130,
+      size : "M-2XL", 
+      color: "Black|White|Blue|Red",
+      brand: "hugo"
+    },
+
+    { id: 42, 
+      name: "Lacoste Classic Fit",
+      image:[
+        'https://i.ibb.co/PZm4XkBb/2025-05-16-005444600-Photoroom.png',
+        'https://i.ibb.co/t9hc5fK/2025-05-16-005522993-Photoroom.png',
+        'https://i.ibb.co/G4fqZJNx/2025-05-16-005626127-Photoroom.png',
+        'https://i.ibb.co/gBQ79kf/2025-05-16-005711897-Photoroom.png',
+        'https://i.ibb.co/yFRg4Q6q/2025-05-16-005753015-Photoroom.png',
+        'https://i.ibb.co/0pG7cxpX/2025-05-16-005859036-Photoroom.png'
+      ], 
+      art: 5001, 
+      category: "Tshirt",
+      price: 140,
+      size : "M-2XL", 
+      color: "Black|Dark Blue|Khaki|Sky Blue|Cream|White",
+      brand: "lacoste"
+    },
+
+    { id: 43, 
+      name: "Soft Cotton Polo Shirt",
+      image:[
+        'https://i.ibb.co/fZKfYLN/2025-05-16-010349046-Photoroom.png',
+        'https://i.ibb.co/KchkRRxN/2025-05-16-010433207-Photoroom.png',
+        'https://i.ibb.co/Cp9f6YgR/2025-05-16-010518993-Photoroom.png',
+        'https://i.ibb.co/7x8pD6H8/2025-05-16-010611920-Photoroom.png',
+      ], 
+      art: 3801, 
+      category: "Tshirt",
+      price: 140,
+      size : "M-2XL", 
+      color: "Black|Dark Blue|Cream|White",
+      brand: "ralph-lauren"
+    },
+
+    { id: 44, 
+      name: "Polo Ralph Lauren Custom Slim Fit Polo Bear Jersey T-shirt",
+      image:[
+        'https://i.ibb.co/Nz1f62r/2025-05-16-011009063-Photoroom.png',
+        'https://i.ibb.co/hJgWx0f3/2025-05-16-011121136-Photoroom.png',
+      ], 
+      art: 3802, 
+      category: "Tshirt",
+      price: 160,
+      size : "S-XL", 
+      color: "Black|White",
+      brand: "ralph-lauren"
+    },
+
+    { id: 45, 
+      name: "Comme Des Garçons Play",
+      image:[
+        'https://i.ibb.co/KppDfYPf/2025-05-16-011458238.png',
+      ], 
+      art: 3912, 
+      category: "Tshirt",
+      price: 160,
+      size : "S-XXL", 
+      color: "White",
+      brand: "ami"
+    },
+
+    { id: 46, 
+      name: "Comme Des Garçons Play Heart Logo Cotton T-shirt",
+      image:[
+        'https://i.ibb.co/4Rx2HXwR/2025-05-16-012054300.png',
+      ], 
+      art: 3913, 
+      category: "Tshirt",
+      price: 160,
+      size : "S-XXL", 
+      color: "White",
+      brand: "ami"
+    },
+
+    { id: 47, 
+      name: "Anti Social Social Club x CPFM Tee",
+      image:[
+        'https://i.ibb.co/JWRL8st7/2025-05-16-012448498-Photoroom.png',
+        'https://i.ibb.co/wNrJ5ywd/2025-05-16-012522318-Photoroom.png'
+      ], 
+      art: 3001, 
+      category: "Tshirt",
+      price: 180,
+      size : "S-XXL", 
+      color: "Black|White",
+      brand: "assc"
+    },
+
+    { id: 48, 
+      name: "Anti Social Social Club x CPFM Tee",
+      image:[
+        'https://i.ibb.co/TqKY7N9y/2025-05-16-013021714-Photoroom.png',
+        'https://i.ibb.co/ycFMrkMP/2025-05-16-013111908-Photoroom.png',
+        'https://i.ibb.co/4Z4k8FHs/2025-05-16-013147689-Photoroom.png',
+        'https://i.ibb.co/VcT7WJjT/2025-05-16-013220829-Photoroom.png'
+      ], 
+      art: 2701, 
+      category: "Tshirt",
+      price: 170,
+      size : "S-XXL", 
+      color: "Black|White",
+      brand: "stussy"
+    },
+
+    { id: 49, 
+      name: "Stussy Angel Tee",
+      image:[
+        'https://i.ibb.co/Kc32ZQGm/2025-05-16-013610014-Photoroom.png',
+        'https://i.ibb.co/5XWWZTdZ/2025-05-16-013958781-Photoroom.png',
+        'https://i.ibb.co/Y4VpnKkf/2025-05-16-014436601-Photoroom.png',
+        'https://i.ibb.co/ymyv2Dh9/2025-05-16-014549422-Photoroom.png'
+      ], 
+      art: 2702, 
+      category: "Tshirt",
+      price: 150,
+      size : "S-XXL", 
+      color: "White|Green",
+      brand: "stussy"
+    },
+
+    { id: 50, 
+      name: "Vtg Stussy Skateboards Withered Flower Tee",
+      image:[
+        'https://i.ibb.co/hFdsXHVM/2025-05-16-014902822-Photoroom.png',
+        'https://i.ibb.co/VWJprqFk/2025-05-16-014954094-Photoroom.png',
+        'https://i.ibb.co/FvbM3Ft/2025-05-16-015041805-Photoroom.png',
+        'https://i.ibb.co/Xk39BSdn/2025-05-16-015133953-Photoroom.png',
+        'https://i.ibb.co/fGxbp3XQ/2025-05-16-015222023-Photoroom.png',
+        'https://i.ibb.co/fz7ctJ5y/2025-05-16-015543421-Photoroom.png'
+      ], 
+      art: 2703, 
+      category: "Tshirt",
+      price: 150,
+      size : "S-XXL", 
+      color: "Black|Green",
+      brand: "stussy"
+    },
+
+    { id: 51, 
+      name: "C.P. Company Nextlandscape Cotton T-shirt",
+      image:[
+        'https://i.ibb.co/ynR8f6XV/2025-05-16-020308190-Photoroom.png',
+        'https://i.ibb.co/mVFb3sM9/2025-05-16-020358110-Photoroom.png',
+      ], 
+      art: 1711, 
+      category: "Tshirt",
+      price: 210,
+      size : "S-XXL", 
+      color: "White|Grey",
+      brand: "cp"
+    },
+
+    { id: 52, 
+      name: "Balenciaga Slime Tee Medium Fit",
+      image:[
+        'https://i.ibb.co/9K8Mt05/2025-05-16-020952895-Photoroom.png',
+        'https://i.ibb.co/7NzBs4vG/2025-05-16-021041135-Photoroom.png',
+      ], 
+      art: 7601, 
+      category: "Tshirt",
+      price: 220,
+      size : "XS-L", 
+      color: "Black|White",
+      brand: "balenciaga"
+    },
   ]
 
+const sales = [
+  { id: 5, 
+      name: "Nike SB Dunk Low Club 58 Gulf Racing Blue Chill",
+      image:[
+        'https://i.ibb.co/j9bG8Dqp/2025-05-07-174633384-Photoroom.png'
+      ], 
+      art: 2564, 
+      category: "shoose",
+      price: 229,
+      size : "36-45", 
+      color: "Racing Blue",
+      brand: "nike"
+    },
 
+{ id: 20, 
+      name: "Ami Paris Shorts",
+      image:[
+        'https://i.ibb.co/SwPx0894/2025-05-09-005001559-Photoroom.png',
+        'https://i.ibb.co/whfxt4ZJ/2025-05-09-095532570-Photoroom.png',
+        'https://i.ibb.co/x8C2DnhN/2025-05-09-095639296-Photoroom.png',
+        'https://i.ibb.co/zVCSXLgW/2025-05-09-005053085-Photoroom.png',
+        'https://i.ibb.co/CK3Pc4Ys/2025-05-09-005144339-Photoroom.png',
+        'https://i.ibb.co/JRhLt76t/2025-05-09-095757041-Photoroom.png'
+      ], 
+      art: 3901, 
+      category: "short",
+      price: 150,
+      size : "S-XL", 
+      color: "White",
+      brand: "ami"
+    },
+
+    { id: 49, 
+      name: "Stussy Angel Tee",
+      image:[
+        'https://i.ibb.co/Kc32ZQGm/2025-05-16-013610014-Photoroom.png',
+        'https://i.ibb.co/5XWWZTdZ/2025-05-16-013958781-Photoroom.png',
+        'https://i.ibb.co/Y4VpnKkf/2025-05-16-014436601-Photoroom.png',
+        'https://i.ibb.co/ymyv2Dh9/2025-05-16-014549422-Photoroom.png'
+      ], 
+      art: 2702, 
+      category: "Tshirt",
+      price: 150,
+      size : "S-XXL", 
+      color: "White|Green",
+      brand: "stussy"
+    },
+
+    { id: 8, 
+      name: "New Balance Sneakers Classics M1906AD",
+      image:[
+        'https://i.ibb.co/XxD30cW3/2025-05-07-221118076.png'
+      ], 
+      art: 3801, 
+      category: "shoose",
+      price: 179,
+      size : "36-45", 
+      color: "Silver Metallic",
+      brand: "nb"
+    },
+
+    { id: 19, 
+      name: "CP Company Metropolis Jogger Shorts",
+      image:[
+        'https://i.ibb.co/fPD9MhG/2025-05-09-004046509-Photoroom.png',
+        'https://i.ibb.co/M5PSCKMb/2025-05-09-004153099-Photoroom.png',
+        'https://i.ibb.co/YFHjF7MY/2025-05-09-004241001-Photoroom.png',
+        'https://i.ibb.co/VWjswNQG/2025-05-09-004350853-Photoroom.png'
+      ], 
+      art: 1702, 
+      category: "short",
+      price: 240,
+      size : "M-XXL", 
+      color: "Metal Silver",
+      brand: "cp"
+    },
+
+    { id: 51, 
+      name: "C.P. Company Nextlandscape Cotton T-shirt",
+      image:[
+        'https://i.ibb.co/mVFb3sM9/2025-05-16-020358110-Photoroom.png',
+      ], 
+      art: 1711, 
+      category: "Tshirt",
+      price: 210,
+      size : "S-XXL", 
+      color: "Grey",
+      brand: "cp"
+    },
+
+     { id: 7, 
+      name: "Air Jordan 4 Retro",
+      image:[
+        'https://static.nike.com/a/images/w_1280,q_auto,f_auto/7f29caac-0e3f-4d6e-a603-35b5d66b468b/air-jordan-4-red-cement-dh6927-161-release-date.jpg',
+      ], 
+      art: 2567, 
+      category: "shoose",
+      price: 279,
+      size : "36-47", 
+      color: "Vivid Sulfur|Red Cement|Smoke Grey",
+      brand: "nike"
+    },
+
+    { id: 27, 
+      name: "Palm Angels Classic Shorts",
+      image:[
+        'https://i.ibb.co/HTb7xHw2/2025-05-09-140034779-Photoroom.png',
+      ], 
+      art: 2202, 
+      category: "short",
+      price: 150,
+      size : "S-XL", 
+      color: "Green|Red|Puple",
+      brand: "pa"
+    },
+
+    { id: 37, 
+      name: "Palm Angels Dragon Lunar New Year Tee",
+      image:[
+        'https://i.ibb.co/1GxFDY33/2025-05-15-235439318-Photoroom.png',
+      ], 
+      art: 2233, 
+      category: "Tshirt",
+      price: 140,
+      size : "S-XL", 
+      color: "White",
+      brand: "pa"
+    },
+]
 const Catalog = () => {
   const [category, setCategory] = useState("all");
-  const [priceRange, setPriceRange] = useState(1000);
+  const [priceRange, setPriceRange] = useState(350);
   const [brand, setBrand] = useState("all");
 
   const filteredProducts = products.filter((product) => {
@@ -877,16 +986,16 @@ const Catalog = () => {
           1024: { slidesPerView: 3 },
           }}
         >
-          {products.map((product) => (
-            <SwiperSlide key={product.id}>
+          {sales.map((sale) => (
+            <SwiperSlide key={sale.id}>
               <div className="p-4 border rounded-xl shadow-sm bg-white text-center">
-                <img className="catalog__item-addimg" src={product.image} alt="#" />
-                <h3 className="catalog__item-title">{product.name}</h3>
+                <img className="catalog__item-addimg" src={sale.image} alt="#" />
+                <h3 className="catalog__item-title">{sale.name}</h3>
                 <div className="catalog__item-row">
-                    <p className="catalog__item-size">{product.size}</p>
-                    <p className="catalog__item-color">{product.color}</p>
+                    <p className="catalog__item-size">{sale.size}</p>
+                    <p className="catalog__item-color">{sale.color}</p>
                 </div>
-                <p className="catalog__item-prise" >{product.price}Lv</p>
+                <p className="catalog__item-prise" >{sale.price}Lv</p>
               </div>
             </SwiperSlide>
           ))}
@@ -915,8 +1024,8 @@ const Catalog = () => {
               className="brend__price-input"
               id="price"
               type="range"
-              min="120"
-              max="1500"
+              min="110"
+              max="500"
               value={priceRange}
               onChange={(e) => setPriceRange(Number(e.target.value))}
               />
@@ -932,16 +1041,24 @@ const Catalog = () => {
                   <option className="brend__box-item" value="all">Все</option>
                   <option className="brend__box-item" value="adidas">Adidas</option>
                   <option className="brend__box-item" value="ami">Ami Paris</option>
+                  <option className="brend__box-item" value="assc">Anti Social Social Club</option>
                   <option className="brend__box-item" value="bape">Bape</option>
+                  <option className="brend__box-item" value="balenciaga">Balenciaga</option>
+                  <option className="brend__box-item" value="burberry">Burberry</option>
                   <option className="brend__box-item" value="cp">CP Company</option>
+                  <option className="brend__box-item" value="carhart">Carhartt</option>
                   <option className="brend__box-item" value="denim">Denim Tears</option>
-                  <option className="brend__box-item" value="stone-island">Stone Island</option>
+                  <option className="brend__box-item" value="hugo">HUGO BOSS</option>
+                  <option className="brend__box-item" value="lacoste">Lacoste</option>
                   <option className="brend__box-item" value="lv">LOUIS VUITTON</option>
                   <option className="brend__box-item" value="pa">Palm Angels</option>
+                  <option className="brend__box-item" value="tnf">The North Face</option>
                   <option className="brend__box-item" value="nike">Nike</option>
-                  <option className="brend__box-item" value="stussy">Stussy</option>
-                  <option className="brend__box-item" value="ralph-lauren">Ralph Lauren</option>
                   <option className="brend__box-item" value="nb">New Balance</option>
+                  <option className="brend__box-item" value="stone-island">Stone Island</option>
+                  <option className="brend__box-item" value="stussy">Stussy</option>
+                  <option className="brend__box-item" value="spider">Sp5der</option>
+                  <option className="brend__box-item" value="ralph-lauren">Ralph Lauren</option>
               </select>
           </div>
         </div>
