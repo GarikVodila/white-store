@@ -753,7 +753,7 @@ const products = [
     },
 
     { id: 48, 
-      name: "Anti Social Social Club x CPFM Tee",
+      name: "STUSSY 30TH BIRTHDAY LIMITED EDITION MOLTOV COCKTAIL",
       image:[
         'https://i.ibb.co/TqKY7N9y/2025-05-16-013021714-Photoroom.png',
         'https://i.ibb.co/ycFMrkMP/2025-05-16-013111908-Photoroom.png',
