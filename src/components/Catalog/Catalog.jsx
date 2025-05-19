@@ -122,7 +122,7 @@ const products = [
         'https://i.ibb.co/ynbdWNn7/2025-05-07-220848387.png',
         'https://i.ibb.co/XxD30cW3/2025-05-07-221118076.png'
       ], 
-      art: 3801, 
+      art: 3401, 
       category: "shoose",
       price: 179,
       size : "36-45", 
@@ -138,7 +138,7 @@ const products = [
         'https://i.ibb.co/C3zMjQ4s/2025-05-07-222336745.png',
         'https://i.ibb.co/3myNqv9C/2025-05-07-222510277.png'
       ], 
-      art: 3802, 
+      art: 3402, 
       category: "shoose",
       price: 249,
       size : "36-45", 
@@ -264,7 +264,7 @@ const products = [
         'https://i.ibb.co/vCj4Kw1r/2025-05-09-001946556-Photoroom.png',
         'https://i.ibb.co/8D3qnFcZ/2025-05-09-002031608-Photoroom.png',
       ], 
-      art: 1101, 
+      art: 3801, 
       category: "short",
       price: 139,
       size : "S-XL", 
@@ -451,7 +451,7 @@ const products = [
         'https://i.ibb.co/5X4q6Bss/2025-05-09-132729302-Photoroom.png',
         'https://i.ibb.co/B0QhC12/2025-05-09-132848468-Photoroom.png',
       ], 
-      art: 3801, 
+      art: 3701, 
       category: "short",
       price: 150,
       size : "S-XL", 
@@ -531,7 +531,7 @@ const products = [
         'https://i.ibb.co/nqtbjMqC/2025-05-12-182612866-Photoroom.png',
         'https://i.ibb.co/NgxtsN1Y/2025-05-12-182834318-Photoroom.png'
       ], 
-      art: 3101, 
+      art: 3601, 
       category: "Tshirt",
       price: 160,
       size : "S-XL", 
@@ -690,7 +690,7 @@ const products = [
         'https://i.ibb.co/Cp9f6YgR/2025-05-16-010518993-Photoroom.png',
         'https://i.ibb.co/7x8pD6H8/2025-05-16-010611920-Photoroom.png',
       ], 
-      art: 3801, 
+      art: 3802, 
       category: "Tshirt",
       price: 140,
       size : "M-2XL", 
@@ -704,7 +704,7 @@ const products = [
         'https://i.ibb.co/Nz1f62r/2025-05-16-011009063-Photoroom.png',
         'https://i.ibb.co/hJgWx0f3/2025-05-16-011121136-Photoroom.png',
       ], 
-      art: 3802, 
+      art: 3803, 
       category: "Tshirt",
       price: 160,
       size : "S-XL", 
@@ -829,7 +829,286 @@ const products = [
       color: "Black|White",
       brand: "balenciaga"
     },
-  ]
+
+    { id: 53, 
+      name: "Stussy Basic Stussy Zip Hoodie",
+      image:[
+        'https://i.ibb.co/BSmMdQ2/2025-05-18-000836119-Photoroom.png',
+        'https://i.ibb.co/wNB0FkpH/2025-05-18-000741272-Photoroom.png',
+        'https://i.ibb.co/4wZZTYpv/2025-05-18-000945456-Photoroom.png',
+        'https://i.ibb.co/v4tGhRvc/2025-05-18-000915218-Photoroom.png'
+      ], 
+      art: 2721, 
+      category: "hoodie",
+      price: 170,
+      size : "S-XL", 
+      color: "Black|White",
+      brand: "stussy"
+    },
+
+    { id: 54, 
+      name: "Stussy Smashing The Ball",
+      image:[
+        'https://i.ibb.co/yLLvVzg/2025-05-18-001255977-Photoroom.png',
+        'https://i.ibb.co/67Sm58fK/2025-05-18-001331377-Photoroom.png',
+        'https://i.ibb.co/sdxR3p0F/2025-05-18-001407107-Photoroom.png',
+        'https://i.ibb.co/yFYRkkpV/2025-05-18-001436563-Photoroom.png'
+      ], 
+      art: 2722, 
+      category: "hoodie",
+      price: 170,
+      size : "S-XL", 
+      color: "Black|White",
+      brand: "stussy"
+    },
+
+    { id: 55, 
+      name: "Stussy Fuzzy Dice Hoodie",
+      image:[
+        'https://i.ibb.co/zVr7shTk/2025-05-18-001703707.png',
+        'https://i.ibb.co/1tzXkMh1/2025-05-18-001744104.png',
+        'https://i.ibb.co/nqMNVTND/2025-05-18-001859273.png',
+        'https://i.ibb.co/kV4XJBPw/2025-05-18-001953993.png',
+        'https://i.ibb.co/PvWVD8CN/2025-05-18-002044088.png',
+        'https://i.ibb.co/xSp14BpH/2025-05-18-002120728.png'
+      ], 
+      art: 2723, 
+      category: "hoodie",
+      price: 180,
+      size : "S-XL", 
+      color: "Black|White|Grey",
+      brand: "stussy"
+    },
+
+    { id: 56, 
+      name: "Thrasher Sweatshirt Skate Mag Crew",
+      image:[
+        'https://i.ibb.co/1fnjxpYj/2025-05-18-003051823-Photoroom.png',
+        'https://i.ibb.co/rGM1Z1zC/2025-05-18-003132827-Photoroom.png',
+      ], 
+      art: 8301, 
+      category: "hoodie",
+      price: 180,
+      size : "S-XXL", 
+      color: "Black|White",
+      brand: "thrasher"
+    },
+
+    { id: 57, 
+      name: "Streetwear açaí Sp5der hoodie",
+      image:[
+        'https://i.ibb.co/MydwMTLV/2025-05-18-003434292-Photoroom.png',
+        'https://i.ibb.co/1JjrxzJf/2025-05-18-003515890-Photoroom.png',
+      ], 
+      art: 8301, 
+      category: "hoodie",
+      price: 190,
+      size : "S-XXL", 
+      color: "Purple|Blue",
+      brand: "spider"
+    },
+
+    { id: 58, 
+      name: "Polo Ralph Lauren The Rl Fleece Logo Hoodie",
+      image:[
+        'https://i.ibb.co/4nWfTsSM/2025-05-18-003854715-Photoroom.png',
+        'https://i.ibb.co/QRr3CJk/2025-05-18-003926582-Photoroom.png',
+        'https://i.ibb.co/7NRDJBnT/2025-05-18-004001848-Photoroom.png'
+      ], 
+      art: 3811, 
+      category: "hoodie",
+      price: 170,
+      size : "S-XL", 
+      color: "Black|Green|White",
+      brand: "ralph-lauren"
+    },
+
+    { id: 60, 
+      name: "Stone Island Navy Basic Cotton Hoodie",
+      image:[
+        'https://i.ibb.co/fgc7nVV/2025-05-18-004249989-Photoroom.png',
+        'https://i.ibb.co/mFbVSbCJ/2025-05-18-004350817-Photoroom.png',
+        'https://i.ibb.co/LD6ppwZX/2025-05-18-004430574-Photoroom.png',
+        'https://i.ibb.co/mrt2nrS0/2025-05-18-004527446-Photoroom.png'
+      ], 
+      art: 3811, 
+      category: "hoodie",
+      price: 250,
+      size : "M-3XL", 
+      color: "Black|Green|Sky Blue|Cream",
+      brand: "stone-island"
+    },
+
+    { id: 61, 
+      name: "Corteiz 4Starz Alcatraz Hoodie",
+      image:[
+        'https://i.ibb.co/0y7CbCLg/2025-05-18-005240136-Photoroom.png',
+        'https://i.ibb.co/svyYXbNS/2025-05-18-005313461-Photoroom.png',
+      ], 
+      art: 4101, 
+      category: "hoodie",
+      price: 200,
+      size : "S-XL", 
+      color: "Black|White",
+      brand: "corteiz"
+    },
+
+    { id: 62, 
+      name: "Vlone Staple Hoodie",
+      image:[
+        'https://i.ibb.co/tM02Q2RT/2025-05-18-005540408-Photoroom.png',
+        'https://i.ibb.co/Lz25MTL5/2025-05-18-005616842-Photoroom.png',
+        'https://i.ibb.co/fzHRfzMs/2025-05-18-005646478-Photoroom.png',
+        'https://i.ibb.co/ks0F6QWN/2025-05-18-005723379-Photoroom.png'
+      ], 
+      art: 4201, 
+      category: "hoodie",
+      price: 210,
+      size : "S-XL", 
+      color: "Black|White",
+      brand: "vlone"
+    },
+
+    { id: 63, 
+      name: "Carhartt WIP Hoodie",
+      image:[
+        'https://i.ibb.co/4w0jKG2j/2025-05-18-021146537-Photoroom.png',
+        'https://i.ibb.co/4RDCP329/2025-05-18-021251026-Photoroom.png',
+        'https://i.ibb.co/qMYZTpfG/2025-05-18-021504216-Photoroom.png',
+        'https://i.ibb.co/N2NMwtCx/2025-05-18-021638828-Photoroom.png',
+        'https://i.ibb.co/VY7SKFFW/2025-05-18-021740202-Photoroom.png'
+      ], 
+      art: 3701, 
+      category: "hoodie",
+      price: 180,
+      size : "S-XL", 
+      color: "Black|Green|Yellow|Blue|Purple",
+      brand: "carhart"
+    },
+
+    { id: 64, 
+      name: "Hello My Name Is Vetements Hoodie",
+      image:[
+        'https://i.ibb.co/fdmZ8NSr/2025-05-18-230345858-Photoroom.png',
+        'https://i.ibb.co/Qv10Gchm/2025-05-18-230443263-Photoroom.png',
+        'https://i.ibb.co/JW4yXq6X/2025-05-18-225831751.png',
+        'https://i.ibb.co/XrvCPq5B/2025-05-18-230034520-Photoroom.png',
+        'https://i.ibb.co/bMjj3kVf/2025-05-18-230154261-Photoroom.png',
+        'https://i.ibb.co/4nDKBZWZ/2025-05-18-230545179-Photoroom.png',
+        'https://i.ibb.co/Rp7RGj2V/2025-05-18-230701250-Photoroom.png'
+      ], 
+      art: 1201, 
+      category: "hoodie",
+      price: 250,
+      size : "S-XL", 
+      color: "Black|White|Orange|Light Yellow",
+      brand: "vetements"
+    },
+
+    { id: 65, 
+      name: "Supreme Blurred Logo Sweatshirt",
+      image:[
+        'https://i.ibb.co/bRPB6hdH/2025-05-18-231119019-Photoroom.png',
+        'https://i.ibb.co/QF4w3Cpm/2025-05-18-231245767-Photoroom.png',
+        'https://i.ibb.co/2YLmDXGZ/2025-05-18-231322093-Photoroom.png',
+      ], 
+      art: 1901, 
+      category: "hoodie",
+      price: 220,
+      size : "S-L", 
+      color: "Grey|Blue|Red",
+      brand: "supreme"
+    },
+
+    { id: 66, 
+      name: "Lacoste Loose Fit Printed Fleece Sweatshirt",
+      image:[
+        'https://i.ibb.co/v6nghpMt/1-Photoroom.png',
+        'https://i.ibb.co/Qj32jCHp/2025-05-18-232328931-Photoroom.png',
+      ], 
+      art: 5011, 
+      category: "hoodie",
+      price: 170,
+      size : "M-2XL", 
+      color: "Dark Blue|White",
+      brand: "lacoste"
+    },
+
+    { id: 67, 
+      name: "Nike Air Jordan x PSG Fleece Pullover Hoodie",
+      image:[
+        'https://i.ibb.co/B2Lc26DK/4c5bc72f-Photoroom.png',
+        'https://i.ibb.co/6RLctpPK/2025-05-18-233216952-Photoroom.png',
+      ], 
+      art: 2561, 
+      category: "hoodie",
+      price: 160,
+      size : "M-2XL", 
+      color: "Black|White",
+      brand: "nike"
+    },
+
+    { id: 68, 
+      name: "Polo Ralph Lauren Bear Slub Fleece Hoodie",
+      image:[
+        'https://i.ibb.co/fzjW7V7Z/2025-05-18-234152648-Photoroom.png',
+        'https://i.ibb.co/Zz3P51yk/2025-05-18-234250374-Photoroom.png',
+        'https://i.ibb.co/Qjmt7rrY/2025-05-18-234400181-Photoroom.png'
+      ], 
+      art: 3812, 
+      category: "hoodie",
+      price: 180,
+      size : "M-2XL", 
+      color: "Black|White|Dark Blue",
+      brand: "ralph-lauren"
+    },
+    
+    { id: 69, 
+      name: "AMI Paris Ami De Coeur long-sleeve hoodie",
+      image:[
+        'https://i.ibb.co/209Tr9d0/2025-05-18-234938008-Photoroom.png',
+        'https://i.ibb.co/TMz7s8r6/2025-05-18-235017330-Photoroom.png',
+        'https://i.ibb.co/W4sFpncY/2025-05-18-235124016-Photoroom.png',
+        'https://i.ibb.co/7dMS4k6F/2025-05-18-235231845-Photoroom.png',
+        'https://i.ibb.co/b506TMLB/2025-05-18-235322704-Photoroom.png',
+        'https://i.ibb.co/7tnb43Br/2025-05-18-235405768-Photoroom.png'
+      ], 
+      art: 3922, 
+      category: "hoodie",
+      price: 200,
+      size : "S-XL", 
+      color: "Black|Blue|Green|Cream|Grey|White",
+      brand: "ami"
+    },
+
+    { id: 70, 
+      name: "Supreme Immortal Hooded Sweatshirt",
+      image:[
+        'https://i.ibb.co/qvxjFtq/24742b2a-Photoroom.png',
+        'https://i.ibb.co/sJK1NZ6j/2025-05-18-235920267-Photoroom.png',
+      ], 
+      art: 1902, 
+      category: "hoodie",
+      price: 220,
+      size : "S-XL", 
+      color: "Black|Grey",
+      brand: "supreme"
+    },
+
+    { id: 71, 
+      name: "ARCTERYX BIG LOGO Y2K SWEATSHIRT",
+      image:[
+        'https://i.ibb.co/XfcZBB8G/446d34a0-Photoroom.png',
+        'https://i.ibb.co/BhFT1JG/2025-05-19-000304796-Photoroom.png',
+      ], 
+      art: 6102, 
+      category: "hoodie",
+      price: 210,
+      size : "XS-L", 
+      color: "Black|Grey",
+      brand: "supreme"
+    },
+];
 
 const sales = [
   { id: 5, 
@@ -849,11 +1128,6 @@ const sales = [
       name: "Ami Paris Shorts",
       image:[
         'https://i.ibb.co/SwPx0894/2025-05-09-005001559-Photoroom.png',
-        'https://i.ibb.co/whfxt4ZJ/2025-05-09-095532570-Photoroom.png',
-        'https://i.ibb.co/x8C2DnhN/2025-05-09-095639296-Photoroom.png',
-        'https://i.ibb.co/zVCSXLgW/2025-05-09-005053085-Photoroom.png',
-        'https://i.ibb.co/CK3Pc4Ys/2025-05-09-005144339-Photoroom.png',
-        'https://i.ibb.co/JRhLt76t/2025-05-09-095757041-Photoroom.png'
       ], 
       art: 3901, 
       category: "short",
@@ -866,10 +1140,7 @@ const sales = [
     { id: 49, 
       name: "Stussy Angel Tee",
       image:[
-        'https://i.ibb.co/Kc32ZQGm/2025-05-16-013610014-Photoroom.png',
         'https://i.ibb.co/5XWWZTdZ/2025-05-16-013958781-Photoroom.png',
-        'https://i.ibb.co/Y4VpnKkf/2025-05-16-014436601-Photoroom.png',
-        'https://i.ibb.co/ymyv2Dh9/2025-05-16-014549422-Photoroom.png'
       ], 
       art: 2702, 
       category: "Tshirt",
@@ -884,7 +1155,7 @@ const sales = [
       image:[
         'https://i.ibb.co/XxD30cW3/2025-05-07-221118076.png'
       ], 
-      art: 3801, 
+      art: 3401, 
       category: "shoose",
       price: 179,
       size : "36-45", 
@@ -896,9 +1167,6 @@ const sales = [
       name: "CP Company Metropolis Jogger Shorts",
       image:[
         'https://i.ibb.co/fPD9MhG/2025-05-09-004046509-Photoroom.png',
-        'https://i.ibb.co/M5PSCKMb/2025-05-09-004153099-Photoroom.png',
-        'https://i.ibb.co/YFHjF7MY/2025-05-09-004241001-Photoroom.png',
-        'https://i.ibb.co/VWjswNQG/2025-05-09-004350853-Photoroom.png'
       ], 
       art: 1702, 
       category: "short",
@@ -989,13 +1257,14 @@ const Catalog = () => {
           {sales.map((sale) => (
             <SwiperSlide key={sale.id}>
               <div className="p-4 border rounded-xl shadow-sm bg-white text-center">
+                <p className="catalog__item-art">art:{sale.art}</p>
                 <img className="catalog__item-addimg" src={sale.image} alt="#" />
                 <h3 className="catalog__item-title">{sale.name}</h3>
                 <div className="catalog__item-row">
                     <p className="catalog__item-size">{sale.size}</p>
                     <p className="catalog__item-color">{sale.color}</p>
                 </div>
-                <p className="catalog__item-prise" >{sale.price}Lv</p>
+                <p className="catalog__item-prise" >{sale.price} BGN</p>
               </div>
             </SwiperSlide>
           ))}
@@ -1012,14 +1281,13 @@ const Catalog = () => {
                   <option className="brend__type-item" value="all">Все</option>
                   <option className="brend__type-item" value="hoodie">Худи</option>
                   <option className="brend__type-item" value="Tshirt">Футболка</option>
-                  <option className="brend__type-item" value="sport-suit">Спортивный костюм</option>
                   <option className="brend__type-item" value="short">Шорты</option>
                   <option className="brend__type-item" value="shoose">Кросовки</option>
               </select>
           </div>
 
           <div className="brend__price">
-              <p className="brend__price-title" htmlFor="price">Цена:{priceRange}Lv</p>
+              <p className="brend__price-title" htmlFor="price">Цена:{priceRange} BGN</p>
               <input
               className="brend__price-input"
               id="price"
@@ -1045,20 +1313,25 @@ const Catalog = () => {
                   <option className="brend__box-item" value="bape">Bape</option>
                   <option className="brend__box-item" value="balenciaga">Balenciaga</option>
                   <option className="brend__box-item" value="burberry">Burberry</option>
-                  <option className="brend__box-item" value="cp">CP Company</option>
                   <option className="brend__box-item" value="carhart">Carhartt</option>
+                  <option className="brend__box-item" value="cp">CP Company</option>
+                  <option className="brend__box-item" value="corteiz">Corteiz</option>
                   <option className="brend__box-item" value="denim">Denim Tears</option>
                   <option className="brend__box-item" value="hugo">HUGO BOSS</option>
                   <option className="brend__box-item" value="lacoste">Lacoste</option>
                   <option className="brend__box-item" value="lv">LOUIS VUITTON</option>
                   <option className="brend__box-item" value="pa">Palm Angels</option>
                   <option className="brend__box-item" value="tnf">The North Face</option>
+                  <option className="brend__box-item" value="thrasher">Thrasher</option>
                   <option className="brend__box-item" value="nike">Nike</option>
                   <option className="brend__box-item" value="nb">New Balance</option>
                   <option className="brend__box-item" value="stone-island">Stone Island</option>
                   <option className="brend__box-item" value="stussy">Stussy</option>
                   <option className="brend__box-item" value="spider">Sp5der</option>
+                  <option className="brend__box-item" value="supreme">Supreme</option>
                   <option className="brend__box-item" value="ralph-lauren">Ralph Lauren</option>
+                  <option className="brend__box-item" value="vetements">Vetements</option>
+                  <option className="brend__box-item" value="vlone">Vlone</option>
               </select>
           </div>
         </div>
@@ -1070,30 +1343,6 @@ const Catalog = () => {
           filteredProducts.map((product) => (
             <div className="catalog__item" key={product.id}>
                 <p className="catalog__item-art">art:{product.art}</p>
-                {/* <img className="catalog__item-img" src={product.img} alt="#" /> */}
-
-                  {/* <Swiper
-                    modules={[Navigation]}
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    navigation
-                    breakpoints={{
-                    640: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                    }}
-                  >
-                  {products.image.map((img, i) => (
-                    <SwiperSlide key={product.id}>
-                      <img
-                    className="catalog__item-img"
-                    key={i}
-                    src={img}
-                    alt={`Фото ${i + 1}`}
-                    />
-                    </SwiperSlide>
-                  ))}
-                </Swiper> */}
                   <div className="row-img-window">
                     {product.image.map((img, i) => (
                         <img
@@ -1109,7 +1358,7 @@ const Catalog = () => {
                     <p className="catalog__item-size">Размер : {product.size}</p>
                     <p className="catalog__item-color">{product.color}</p>
                 </div>
-                <p className="catalog__item-prise" >{product.price}Lv</p>
+                <p className="catalog__item-prise" >{product.price} BGN</p>
                 {/* <a href="https://t.me/Whitestore2024" target="_blank" className="catalog__item-btn">Купить</a> */}
             </div>
           ))
