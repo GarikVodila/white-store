@@ -4,7 +4,7 @@ import './Catalog.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const products = [
     { id: 1, 
@@ -1244,9 +1244,11 @@ const Catalog = () => {
       <div className="filter__container">
       <p className="top-buy">Топ продаж</p>
       <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={3}
+          autoplay={{ delay: 10000 }}
+          loop={true}
           navigation
           breakpoints={{
           640: { slidesPerView: 1 },
@@ -1359,6 +1361,7 @@ const Catalog = () => {
                     <p className="catalog__item-color">{product.color}</p>
                 </div>
                 <p className="catalog__item-prise" >{product.price} BGN</p>
+                
                 {/* <a href="https://t.me/Whitestore2024" target="_blank" className="catalog__item-btn">Купить</a> */}
             </div>
           ))

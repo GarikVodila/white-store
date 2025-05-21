@@ -5,7 +5,7 @@ import '../Catalog.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 // Пример данных
 const products = [
@@ -1249,9 +1249,11 @@ const CatalogBg = () => {
 
       <p className="top-buy">Лучшие продажи</p>
       <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={3}
+          autoplay={{ delay: 10000 }}
+          loop={true}
           navigation
           breakpoints={{
           640: { slidesPerView: 1 },
