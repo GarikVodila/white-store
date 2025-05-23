@@ -978,7 +978,7 @@ const products = [
         'https://i.ibb.co/N2NMwtCx/2025-05-18-021638828-Photoroom.png',
         'https://i.ibb.co/VY7SKFFW/2025-05-18-021740202-Photoroom.png'
       ], 
-      art: 3701, 
+      art: 3711, 
       category: "hoodie",
       price: 180,
       size : "S-XL", 
@@ -1107,6 +1107,94 @@ const products = [
       size : "XS-L", 
       color: "Black|Grey",
       brand: "supreme"
+    },
+
+    { id: 72, 
+      name: "Ralph Lauren Jumper",
+      image:[
+        'https://i.ibb.co/TD9M2ZHw/47795644-Photoroom-1.png',
+        'https://i.ibb.co/sd2VMBNr/2025-05-23-231345652-Photoroom.png',
+        'https://i.ibb.co/993Zvz8v/2025-05-23-231533953-Photoroom.png',
+        'https://i.ibb.co/zHNn2Q2x/2025-05-23-231700174-Photoroom-1.png'
+      ], 
+      art: 3813, 
+      category: "hoodie",
+      price: 170,
+      size : "S-XL", 
+      color: "Black|Dark Blue|Grey|Cream",
+      brand: "ralph-lauren"
+    },
+
+    { id: 73, 
+      name: "Carhartt WIP OG Active Jacket",
+      image:[
+        'https://i.ibb.co/N2JpVHDc/9381f836-Photoroom.png',
+        'https://i.ibb.co/dNZMCHP/2025-05-23-232254901-Photoroom.png',
+        'https://i.ibb.co/hFmRY8dK/2025-05-23-232342843-Photoroom.png',
+      ], 
+      art: 3712, 
+      category: "hoodie",
+      price: 190,
+      size : "M-2XL", 
+      color: "Black|Grey|Broze",
+      brand: "carhart"
+    },
+
+    { id: 74, 
+      name: "Travis Scott Reverse Utopia Hoodie",
+      image:[
+        'https://i.ibb.co/6RJhCHFP/2025-05-23-232640518-Photoroom.png',
+      ], 
+      art: 6901, 
+      category: "hoodie",
+      price: 200,
+      size : "S-XL", 
+      color: "Black",
+      brand: "travis"
+    },
+
+    { id: 75, 
+      name: "Comme Des Garçons Play Zip Hoodie",
+      image:[
+        'https://i.ibb.co/1YSzwk33/2025-05-23-233028935-Photoroom.png',
+        'https://i.ibb.co/Q7NLs9NY/2025-05-23-233704270-Photoroom.png',
+        'https://i.ibb.co/dwpjjtTq/2025-05-23-233818644-Photoroom.png',
+        'https://i.ibb.co/S4cy8MtN/2025-05-23-233957069-Photoroom.png',
+        'https://i.ibb.co/1JG6jCWC/2025-05-23-234056569-Photoroom.png'
+      ], 
+      art: 3922, 
+      category: "hoodie",
+      price: 200,
+      size : "S-XL", 
+      color: "Black|Grey|Cream|Red|Blue",
+      brand: "ami"
+    },
+
+    { id: 77, 
+      name: "Julcewred Hollywood Hip Hop Rock Undead Band Hoodie Pullover",
+      image:[
+        'https://i.ibb.co/99KgKyWb/ae93134d-Photoroom.png',
+        'https://i.ibb.co/4gwQbrM0/2025-05-23-234505699-Photoroom.png',
+      ], 
+      art: 4001, 
+      category: "hoodie",
+      price: 180,
+      size : "M-XL", 
+      color: "Grey|White",
+      brand: "saint-tears"
+    },
+
+    { id: 78, 
+      name: "Travis Scott Cactus Jack Fragment Skeleton Graffiti",
+      image:[
+        'https://i.ibb.co/mFqnF58j/9cdc7d41-Photoroom.png',
+      ], 
+      art: 6902, 
+      category: "hoodie",
+      price: 200,
+      size : "S-2XL", 
+      color: "Black",
+      brand: "travis"
     },
 ];
 
@@ -1325,8 +1413,10 @@ const Catalog = () => {
                   <option className="brend__box-item" value="pa">Palm Angels</option>
                   <option className="brend__box-item" value="tnf">The North Face</option>
                   <option className="brend__box-item" value="thrasher">Thrasher</option>
+                  <option className="brend__box-item" value="travis">Travis Scott</option>
                   <option className="brend__box-item" value="nike">Nike</option>
                   <option className="brend__box-item" value="nb">New Balance</option>
+                  <option className="brend__box-item" value="saint-tears">Saint-Tears</option>
                   <option className="brend__box-item" value="stone-island">Stone Island</option>
                   <option className="brend__box-item" value="stussy">Stussy</option>
                   <option className="brend__box-item" value="spider">Sp5der</option>
@@ -1354,7 +1444,7 @@ const Catalog = () => {
                         alt={`${i + 1}`}
                         />
                         ))}
-                </div>
+                  </div>
                 <h3 className="catalog__item-title">{product.name}</h3>
                 <div className="catalog__item-row">
                     <p className="catalog__item-size">Размер : {product.size}</p>
