@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route index path='white-store' element={<HomePage/>}/>
+        <Route index path='' element={<HomePage/>}/>
         <Route path='white-storebg' element={<Bg/>}/>
         <Route path='white-storeuk' element={<Uk/>}/>
         <Route path='*' element={<NotPage/>}/>
