@@ -149,17 +149,20 @@
         }
 
         &-btn {
-            display: table;
-            margin: 0 auto;
+            display: block;
+            text-align: center;
             margin-top: 10px;
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            transition: 1s linear;
+            background: #3C3C3C;
+            padding: 10px 30px;
             text-decoration: none;
-            font-size: 22px;
-            font-weight: 700;
-            padding: 5px 25px;
-            background-color: #3C3C3C;
-            border: 3px solid #CAD3C8;
-            color: #CAD3C8;
-            border-radius: 3px;
+
+            &:hover {
+                 box-shadow: #4b6584 0 0px 0px 40px inset;
+            }
         }
     }
 
@@ -359,16 +362,3 @@
         margin: 0;
     }
 }
-
-// .slider{
-//     width: 80%;
-//     margin: 0 auto;
-//     height: 200px;
-//     overflow: hidden;
-//     box-sizing: border-box;
-
-//     &-row {
-//         display: flex;
-//         width: 200%;
-//     }
-// }

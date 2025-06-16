@@ -1367,6 +1367,7 @@ const CatalogUk = () => {
                     <p className="catalog__item-color">{product.color}</p>
                 </div>
                 <p className="catalog__item-prise" >{product.price} BGN</p>
+                <a href="https://t.me/Whitestore2024" target="blank" className="catalog__item-btn">Заказать</a>
             </div>
           ))
         ) : (
