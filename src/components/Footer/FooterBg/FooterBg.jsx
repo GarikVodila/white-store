@@ -10,7 +10,7 @@ function FooterBg () {
                     <div className="footer__infoBox">
                         <div className="footer__infoBox__item">
                             <h2 className="footer__infoBox-title">Време за доставка</h2>
-                            <p className="footer__infoBox-text">Доставката се извършва от Америка и се извършва в най-кратки срокове от 7 до 14 дни. Възможни са доставки в цяла България, като е възможно и получаване на място във Варна.</p>
+                            <p className="footer__infoBox-text">Доставката се извършва от Америка и се извършва в най-кратки срокове от 14 до 18 дни. Възможни са доставки в цяла България, като е възможно и получаване на място във Варна.</p>
                         </div>
 
                         <div className="footer__infoBox__item">

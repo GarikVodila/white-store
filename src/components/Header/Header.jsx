@@ -21,9 +21,9 @@ function Header() {
                     <div className="header__nav">
                         <h1 className="header__nav-title">White Store</h1>
                         <div className="header__nav-wrap">
-                            <Link className="header__nav-wrap-item">О нас</Link>
-                            <Link className="header__nav-wrap-item">Система заказов</Link>
-                            <Link className="header__nav-wrap-item">Поддержка</Link>
+                            <Link to='us' className="header__nav-wrap-item">О нас</Link>
+                            <Link to='us' className="header__nav-wrap-item">Система заказов</Link>
+                            <Link to='us' className="header__nav-wrap-item">Поддержка</Link>
                         </div>
                     </div>
 

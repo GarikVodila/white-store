@@ -10,7 +10,7 @@ function Footer () {
                     <div className="footer__infoBox">
                         <div className="footer__infoBox__item">
                             <h2 className="footer__infoBox-title">Срок доставки</h2>
-                            <p className="footer__infoBox-text">Доставка осуществляется с Америки, и происходит в кратчайшие сроки от 7 до 14 дней. Возможны доставки по всей Болгарии, по Варне возможен самовывоз.</p>
+                            <p className="footer__infoBox-text">Доставка осуществляется с Америки, и происходит в кратчайшие сроки от 14 до 18 дней. Возможны доставки по всей Болгарии, по Варне возможен самовывоз.</p>
                         </div>
 
                         <div className="footer__infoBox__item">

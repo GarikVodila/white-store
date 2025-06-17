@@ -10,7 +10,7 @@ function FooterUk () {
                     <div className="footer__infoBox">
                         <div className="footer__infoBox__item">
                             <h2 className="footer__infoBox-title">Delivery time</h2>
-                            <p className="footer__infoBox-text">Delivery is carried out from America, and occurs in the shortest possible time from 7 to 14 days. Deliveries are possible throughout Bulgaria, and pickup is possible in Varna.</p>
+                            <p className="footer__infoBox-text">Delivery is carried out from America, and occurs in the shortest possible time from 14 to 18 days. Deliveries are possible throughout Bulgaria, and pickup is possible in Varna.</p>
                         </div>
 
                         <div className="footer__infoBox__item">

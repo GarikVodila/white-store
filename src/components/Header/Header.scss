@@ -13,7 +13,7 @@
 .header {
     width: 100%;
     padding: 10px 0;
-    background-color: #11151e;
+    background-color: #151B25;
 
     &__container {
         width: 90%;
@@ -51,7 +51,7 @@
 
         &-title{
             font-size: 36px;
-            color: #f1f2f6;
+            color: #DBE8E1;
             font-family: "Winky Rough", sans-serif;
             text-shadow:
             0.5px 0.5px 1px #CAD3C8,
@@ -91,7 +91,7 @@
             &-item {
                 font-size: 22px;
                 text-decoration: none;
-                color: #CAD3C8;
+                color: #DBE8E1;
                 transition: 0.5s;
 
                 @media (max-width:850px) {
@@ -116,7 +116,7 @@
         height: 65px;
         display: flex;
         justify-content: space-around;
-        border-bottom: 2px solid #CAD3C8;
+        border-bottom: 2px solid #DBE8E1;
 
         @media (max-width:450px) {
             margin-left: 7px;
