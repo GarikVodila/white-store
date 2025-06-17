@@ -16,9 +16,9 @@ function Us() {
             <Header></Header>
 
             <div className="us-wrapper">
+                <button className="us__container-backBtn" onClick={goBack}>Назад</button>
                 <div className="us__container">
                     <h1 className="us__container-title">О нас</h1>
-                    <button className="us__container-backBtn" onClick={goBack}>Назад</button>
                     <p className="us__container-text">Твой интернет магазин, где ты можешь взять оригинальные вещи, по цене с Америки, с бесплатной доставкой и в кратчайшие сроки товар оказывается у вас. Сервис сделан для клиентов с максимальным удобством и качеством.</p>
                 </div>
 
